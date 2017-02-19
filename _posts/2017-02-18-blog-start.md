@@ -1,16 +1,10 @@
 ---
 layout: post
-cover: 'assets/images/cover7.jpg'
-title:  "코딩인터뷰"
-date:   2017-02-18
-tags: blog coding
-subclass: 'post tag-test tag-content'
-categories: 'casper'
-navigation: True
-logo: 'assets/images/ghost.png'
+title: '코딩인터뷰'
+author: gutmate
+date: 2017-02-18 18:00
+tags: [fables,fiction]
 ---
-
-update : 2016-06-07
 
 목표
 
