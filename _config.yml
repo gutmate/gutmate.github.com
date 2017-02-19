@@ -1,7 +1,9 @@
 title: Jinhyung 기술 블로그
-email: opensource@kakaocorp.com
+email: gutmate@gmail.com
 description: |
   Kakao theme로 git pages 테스트중입니다.
+  문제가 있다면 바로 처리하도록 하겠습니다.
+  연락주세요
 baseurl: ''
 url:
 timezone: Asia/Seoul
@@ -49,19 +51,19 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
 
 # iolo's custom
-author: opensource@kakaocorp.com
+author: jinhyung
 image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 #asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
-  ua: 'UA-72007721-1'
+  ua: #'UA-72007721-1'
 facebook:
-  app_id: '1204347326263800'
-  username: kakaocorp
+  app_id: #'1204347326263800'
+  username: #kakaocorp
 twitter:
-  username: kakaodev
+  username: #kakaodev
 google_plus:
-  username: kakaodev
+  username: #kakaodev
 github:
-  username: kakao
+  username: gutmate
