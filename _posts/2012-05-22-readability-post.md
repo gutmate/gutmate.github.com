@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Testing Readability with a Bunch of Text'
-author: moon
+author: Moon
 date: 2012-05-22 18:00
 tags: [sample post,readability,test]
 ---
