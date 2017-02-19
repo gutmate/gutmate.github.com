@@ -3,10 +3,10 @@ email: opensource@kakaocorp.com
 description: |
   Kakao theme로 git pages 테스트중입니다.
 baseurl: ''
-url: 'http://tech.kakao.com'
+url:
 timezone: Asia/Seoul
 
-repository: kakao/kakao.github.io
+repository: github.com/gutmate
 
 permalink: /:year/:month/:day/:title/
 
