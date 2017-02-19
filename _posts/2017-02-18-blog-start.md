@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '코딩인터뷰'
-author: ryan
+author: formation.p
 date: 2017-02-18 18:00
 tags: [fables,fiction]
 ---

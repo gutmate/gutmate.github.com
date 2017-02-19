@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '지킬로 시작하기!!'
+author: ryan
 date: 2017-02-17
 tags: [fables,fiction]
 ---
