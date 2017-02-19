@@ -1,75 +1,68 @@
-# Jykell configuration
-#markdown: redcarpet
-#highlighter: pygments
+title: kakao 기술 블로그
+email: opensource@kakaocorp.com
+description: |
+  Connect Everything 새로운 연결, 새로운 세상.
+  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+baseurl: ''
+url: 'http://tech.kakao.com'
+timezone: Asia/Seoul 
+
+repository: kakao/kakao.github.io
+
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
 markdown: kramdown
-highlighter: rouge
+
+krandown:
+  input: GFM
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate
+
 paginate: 5
-language: 'en-ko'
+paginate_path: '/page/:num/'
 
-# Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
 
-# Author's info
-author: 'Jinhyung'
-# edit 'categories' in the front matter of every post to match this username
-nickname: jinh
-bio: 'Front'
-location: 'Seoul, KOREA'
-url: ''
-image: 'assets/images/casper.png'
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
 
-short_url: 'gangil.github.io/'
-google_analytics: #UA-69281367-1
-disqus: jinhyungpark
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+exclude: [README.md, Gemfile, Gemfile.lock]
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+keep_files: [assets, files]
 
-
-# gems and other configs
-gems: [jekyll-paginate]
-exclude: [vendor]
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: false
-lsi: false
-username: gangil
-repo: gangil
-branch: master
-relative_source: ../gangil/
-destination: ../gangil-pages/
-production_url:  https://gangil.github.io/
-source_url:      https://github.com/gangil/gangil.github.io
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+# iolo's custom
+author: opensource@kakaocorp.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
+#asset_url: //t1.daumcdn.net/osa/blog/assets
+google_analytics:
+  ua: 'UA-72007721-1'
+facebook:
+  app_id: '1204347326263800'
+  username: kakaocorp
+twitter:
+  username: kakaodev
+google_plus:
+  username: kakaodev
+github:
+  username: kakao

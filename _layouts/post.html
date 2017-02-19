@@ -1,130 +1,65 @@
 ---
 layout: default
-disqus: false
-class: 'post-template'
 ---
-<!-- < default -->
+<div id="navbar" class="container">
+    <h5><a id="link-back" href="/">Back to Posts</a></h5>
+    {% include share.html page=page %}
+</div>
 
-<!-- The comment above "< default" means - insert everything in this file into -->
-    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
+<div id="cover" class="container"
+     {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
+    <div>
+        <h1>{{ page.title }}</h1>
+        <p>
+            {% for tag in page.tags %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
+                {% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        </p>
+        {% include cover_link.html cover=page.cover %}
+    </div>
+</div>
 
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
-
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
-        {% if page.navigation %}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {% endif %}
-    </nav>
-</header>
-
-<main class="content" role="main">
-
-    <article class="{{ page.subclass }}">
-
-        <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <section class="post-meta">
-            <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
-            <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-                <!-- [[tags prefix=" on "]] -->
-                {% if page.tags.size > 0 %} 
-                on 
-                {% for tag in page.tags %}
-                    {% if forloop.index == page.tags.size %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
-                    {% endif %}   
-                {% endfor %}
-                {% endif %}
-            </section>
-        </header>
-
-        <section class="post-content">
-            
-            {{ content }}
-
-        </section>
-
-        <footer class="post-footer">
-
-            <!-- Everything inside the #author tags pulls data from the author -->
-            <!-- #author-->
-
-            {% if site.image %}
-            <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}author/{{ site.nickname }}" style="background-image: url({{ site.baseurl }}{{ site.image }})"><span class="hidden">{{ page.author }}'s Picture</span></a>
-            </figure>
-            {% endif %}
-
-            <section class="author">
-                <h4><a href="{{ site.baseurl }}author/{{ site.nickname }}">{{ site.author }}</a></h4>
-                
-                {% if site.bio %}
-                    <p> {{ site.bio }}</p>
-                {% else %}
-                    <p>Read <a href="{{ site.baseurl }}author/{{ site.nickname }}">more posts</a> by this author.</p>
-                {% endif %}
-                <div class="author-meta">
-                    {% if site.location %}<span class="author-location icon-location"> {{ site.location }}</span>{% endif %} 
-                    {% if site.url %}<span class="author-link icon-link"><a href="{{ site.url }}"> {{ site.short_url }}</a></span>{% endif %} 
-                </div>
-            </section>
-
-            <!-- /author  -->
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url | remove: '/' }}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | remove: '/' }}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url | remove: '/' }}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-            
-            <!-- Add Disqus Comments -->
-            {% if page.disqus %}
-                {% include disqus.html %}
-            {% endif %}
-            
-        </footer>
-
-    </article>
-
-</main>
-
-<aside class="read-next">
-
-    <!-- [[! next_post ]] -->{{ post.url | remove: '/' }}
-    {% if page.next %}
-        <a class="read-next-story {% if page.next.cover %}" style="background-image: url({{ site.baseurl }}{{ page.next.cover }}){% else %}no-cover{% endif %}" href="{{ site.baseurl }}{{ page.next.url | remove: '/' }}">
-            <section class="post">
-                <h2>{{ page.next.title }}</h2>
-                <p>{{ page.next.content | strip_html | truncatewords:15 }}</p>
-            </section>
+<div id="content" class="container post" role="main">
+    <div id="post-content">{{ content }}</div>
+    <div id="post-footer">
+        {% assign author = site.authors | where: 'name', page.author | first %}
+        <a id="post-author" href="{{ author.url }}">
+            <div id="author-image" style="background-image:url({{ author.image | default: '' }});">
+                <span class="sr-only">{{ author.name }}'s profile image</span>
+            </div>
+            <p id="author-name">{{ author.name }}</p>
         </a>
-    {% endif %}
-    <!-- [[! /next_post ]] -->
-    <!-- [[! prev_post ]] -->
-    {% if page.previous %}
-        <a class="read-next-story prev {% if page.previous.cover %}" style="background-image: url({{ site.baseurl }}{{ page.previous.cover }}){% else %}no-cover{% endif %}" href="{{ site.baseurl }}{{ page.previous.url | remove: '/' }}">
-            <section class="post">
-                <h2>{{ page.previous.title }}</h2>
-                <p>{{ page.previous.content | strip_html | truncatewords:15 }}</p>
-            </section>
+        <p id="post-date">{{ page.date | date: '%Y-%m-%d %H:%M' }}</p>
+        <a id="post-more" href="{{ author.url }}">
+            <span>Read more posts by this author</span>
         </a>
-    {% endif %}
-    <!-- [[! /prev_post ]] -->
-</aside>
+    </div>
+</div>
 
-<!-- /post -->
+<div id="post-links" class="container">
+    {% assign prev = page.previous %}
+    {% if prev %}
+        <div id="post-prev"
+             {% if prev.image %}style="background-image: url({{ prev.image }});"{% endif %}>
+            <div>
+                <h3><a href="{{ prev.url }}">{{ prev.title }}</a></h3>
+                <p>YOU MIGHT ENJOY</p>
+            </div>
+        </div>
+    {% endif %}
+    {% assign next = page.next %}
+    {% if next %}
+        <div id="post-next"
+             {% if next.image %}style="background-image: url({{ next.image }});"{% endif %}>
+            <div>
+                <h3><a href="{{ next.url }}">{{ next.title }}</a></h3>
+                <p>NEXT POST</p>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+<div id="lightbox">
+    <div id="lightbox-image"></div>
+</div>
