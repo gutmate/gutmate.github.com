@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "업데이트!!"
+title:  '업데이트!!'
 author: jinhyung
 date: 2017-02-19 15:00
 tags: [congratulation,notice]
