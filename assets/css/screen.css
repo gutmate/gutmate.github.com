@@ -1160,7 +1160,7 @@ body.page-template {
         height: 50px;
         margin: 0 auto;
         background-image: url(../images/mo/tech_logo.png);
-        background-size: 99px 17px;
+        background-size: 157px auto;
     }
 
     #menu {
