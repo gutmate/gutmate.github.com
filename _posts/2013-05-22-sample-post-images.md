@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Post with Images"
+author: Moon
 date: 2013-05-22
 tags: [sample post, images, test]
 ---
