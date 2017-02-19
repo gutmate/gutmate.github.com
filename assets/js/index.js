@@ -39,7 +39,7 @@
         $('#search').submit(function (e) {
             e.preventDefault();
             var q = $('#searchQueryEdit').val();
-            var url = 'http://search.daum.net/search?q=';
+            var url = 'http://search.daum.net/search?q=' + encodeURIComponent(q);
             window.open(url, '', '_blank');
         });
 
