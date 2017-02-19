@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'MathJax Example'
+title: 'MathJax Example'
 author: Moon
 date: 2015-08-10 15:00
 tags: [markdonw,syntax,sample,test,jekyll]
