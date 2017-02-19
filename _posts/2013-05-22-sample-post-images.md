@@ -2,7 +2,7 @@
 layout: post
 title: 'A Post with Images'
 author: Moon
-date: 2013-05-22
+date: 2013-05-22 18:00
 tags: [sample post,images,test]
 ---
 
