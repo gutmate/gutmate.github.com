@@ -977,7 +977,7 @@ body.tag-template #navbar {
 
 #post-links {
     margin-top: 20px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     padding: 0;
     display: table;
     width: 100%;
