@@ -260,6 +260,7 @@ for small screen(<720px):
 }
 
 #wrapper {
+	 position: relative;
     padding-bottom: 100px;
     background-color: #f4f4f4;
     overflow-x: scroll; /* @@iolo for very long title/tags */
@@ -282,10 +283,10 @@ for small screen(<720px):
 }
 
 #back-to-top.static {
-    position: static;
-    float: right;
-    margin-top: 51px; /* 51px = 100(content-footer-spacing) - 29(self height) - 20(bottom) */
-    margin-right: 30px;
+    position: absolute;
+    /* float: right; */
+    /* margin-top: 51px; */ /* 51px = 100(content-footer-spacing) - 29(self height) - 20(bottom) */
+    /* margin-right: 30px; */
 }
 
 /* footer */
