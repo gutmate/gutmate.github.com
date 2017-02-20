@@ -1206,7 +1206,7 @@ body.page-template {
 
     /* footer */
     #footer {
-        height: 240px; /* 240px >= 90(#links height) + 20 + 12(#footer-menu height) + 10 + 12(#copyright height) + 90 */
+        height: 136px; /* 240px >= 90(#links height) + 20 + 12(#footer-menu height) + 10 + 12(#copyright height) + 90 */
     }
 
     #links {
