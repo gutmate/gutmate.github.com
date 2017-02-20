@@ -1252,8 +1252,8 @@ body.page-template {
     }
 
     #back-to-top.static {
-        margin-top: 44px; /* 51px = 100(content-footer-spacing) - 36(self height) - 20(bottom) */
-        margin-right: 20px;
+        /* margin-top: 44px; */ /* 51px = 100(content-footer-spacing) - 36(self height) - 20(bottom) */
+        /* margin-right: 20px; */
     }
 
     /* cover */
