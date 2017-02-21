@@ -16,7 +16,6 @@ cover:
 # [CSS] background-image @keyframes 이용해서 animation 구현하기 (gif)
 
 ## 적용방법
----
 ### 무한반복 (infinite)
 * n = 총 frame 수
 * STEPS = n
@@ -58,7 +57,6 @@ div {
 ```
 
 ## 실제적용사례
----
 ### 무한반복 (infinite)
 * n = 총 frame 수 //5
 * STEPS = n //5
