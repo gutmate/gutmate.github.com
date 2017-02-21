@@ -18,11 +18,12 @@ cover:
 ## 적용방법
 ### 무한반복 (infinite)
 * n = 총 frame 수
-* PERCENT = ( ( 100 / (n) ) + 100) %
+* STEPS = n
+* PERCENT = ( ( 100 / (n-1) ) + 100) %
 
 ```css
 div {
-  animation: gifAnimation 1s steps(n) infinite;
+  animation: gifAnimation 1s steps(STEPS) infinite;
 }
 
 @keyframes gifAnimation {
@@ -36,12 +37,13 @@ div {
 ```
 
 ### 한번만 실행 (1)
-* n = 총 frame 수 - 1
+* n = 총 frame 수
+* STEPS = n-1
 * PERCENT = 100% //fix 100%
 
 ```css
 div {
-  animation: gifAnimation 1s steps(n) 1 forwards;
+  animation: gifAnimation 1s steps(STEPS) 1 forwards;
 }
 
 @keyframes gifAnimation {
@@ -57,6 +59,7 @@ div {
 ## 실제적용사례
 ### 무한반복 (infinite)
 * n = 총 frame 수 //5
+* STEPS = n //5
 * PERCENT = ( ( 100 / (5-1) ) + 100) % //125%
 
 ```css
@@ -76,6 +79,7 @@ div {
 
 ### 한번만 실행 (1)
 * n = 총 frame 수 //5
+* STEPS = n-1 //4
 * PERCENT = 100% //fix 100%
 
 ```css
