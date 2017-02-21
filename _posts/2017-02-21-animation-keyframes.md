@@ -22,7 +22,7 @@ cover:
 
 ```css
 div {
-  anmation: gifAnimation 1s steps(n) infinite;
+  animation: gifAnimation 1s steps(n) infinite;
 }
 
 @keyframes gifAnimation {
@@ -41,7 +41,7 @@ div {
 
 ```css
 div {
-  anmation: gifAnimation 1s steps(n) 1 forwards;
+  animation: gifAnimation 1s steps(n) 1 forwards;
 }
 
 @keyframes gifAnimation {
@@ -61,7 +61,7 @@ div {
 
 ```css
 div {
-  anmation: gifAnimation 1s steps(5) infinite;
+  animation: gifAnimation 1s steps(5) infinite;
 }
 
 @keyframes gifAnimation {
@@ -80,7 +80,7 @@ div {
 
 ```css
 div {
-  anmation: gifAnimation 1s steps(4) 1 forwards;
+  animation: gifAnimation 1s steps(4) 1 forwards;
 }
 
 @keyframes gifAnimation {
