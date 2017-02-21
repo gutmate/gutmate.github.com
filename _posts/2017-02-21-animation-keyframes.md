@@ -9,7 +9,7 @@ tags: [css,animation,keyframes]
 # [CSS] background-image @keyframes 이용해서 animation 구현하기 (gif)
 
 ## 적용방법
-### 무한반복 (infinite)
+#### 무한반복 (infinite)
 * n = 총 frame 수
 * STEPS = n
 * PERCENT = ( ( 100 / (n-1) ) + 100) %
@@ -29,7 +29,7 @@ div {
 }
 ```
 
-### 한번만 실행 (1)
+#### 한번만 실행 (1)
 * n = 총 frame 수
 * STEPS = n-1
 * PERCENT = 100% //fix 100%
@@ -50,7 +50,7 @@ div {
 ```
 
 ## 실제적용사례
-### 무한반복 (infinite)
+#### 무한반복 (infinite)
 * n = 총 frame 수 //5
 * STEPS = n //5
 * PERCENT = ( ( 100 / (5-1) ) + 100) % //125%
@@ -70,7 +70,7 @@ div {
 }
 ```
 
-### 한번만 실행 (1)
+#### 한번만 실행 (1)
 * n = 총 frame 수 //5
 * STEPS = n-1 //4
 * PERCENT = 100% //fix 100%
