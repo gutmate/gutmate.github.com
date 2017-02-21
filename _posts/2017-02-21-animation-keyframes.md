@@ -4,13 +4,6 @@ title:  '[CSS] background-image animation keyframes '
 author: formation.p
 date: 2017-02-21 16:00
 tags: [css,animation,keyframes]
-image: /files/covers/solid-state-logic.jpg
-cover:
-  title: '80-channel Solid State Logic (SSL) XL 9000 K Series Console at Audio Mix House, Studio B'
-  link: https://flic.kr/p/j1DcB
-  author:
-    name: 'Audio Mix House'
-    link: https://www.flickr.com/photos/audiomixhouse/
 ---
 
 # [CSS] background-image @keyframes 이용해서 animation 구현하기 (gif)
