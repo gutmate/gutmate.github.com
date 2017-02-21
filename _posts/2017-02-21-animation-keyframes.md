@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'background-image animation keyframes '
+title:  '[CSS] background-image animation keyframes '
 author: formation.p
 date: 2017-02-21 16:00
 tags: [css,animation,keyframes]
@@ -13,7 +13,7 @@ cover:
     link: https://www.flickr.com/photos/audiomixhouse/
 ---
 
-# 백그라운드 이미지 css @keyframes 이용해서 animation 구현하기 (gif)
+# [CSS] background-image @keyframes 이용해서 animation 구현하기 (gif)
 
 ## 적용방법
 ### 무한반복 (infinite)
