@@ -6,7 +6,7 @@ date: 2017-02-24 17:00
 tags: [javscrpit,jQuery,prototype,animation]
 ---
 
-# jQuery image animation__
+# jQuery image animation
 
 ```js
 /** 
@@ -23,14 +23,13 @@ tags: [javscrpit,jQuery,prototype,animation]
 	$.fn.animationImg = function(steps, duration, delay) {
 		var $this = $(this);
 		var path = $this.attr('src');
-		var rePath = /.+(?=[0-9]{4}.png)|.+(?=[0-9]{4}.jpg)|.+(?=[0-9]{4}.gif)/gm;
-		var matchPath = path.match(rePath);
-		matchPath = matchPath || ['null'];
-		var imgPath = matchPath[0];
-		var reExtn = /.png|.jpg|.gif/gm;
-		var matchExtn = path.match(reExtn);
-		matchExtn = matchExtn || ['null'];
-		var imgExtn = matchExtn[0];
+		var rePath = /.+(?=[0-9]{4}.)/gm;
+		var matchPath = path.match(rePath); //4자리 숫자.확장자를 제외한 경로부분 반환
+		var reversePath = path.replace(rePath,''); //4자리 숫자.확장자 반환
+		matchPath = matchPath || ['null']; //에러 방지
+		var imgPath = matchPath[0]; //배열에서 값 가져오기
+		var reExtn = /[0-9]+/gm; //모든 숫자 선택
+		var imgExtn = reversePath.relace(reExtn,''); //.확장자 반환
 		var startNum = 0;
 		var arrImg = [];
 		steps = steps || 0;
@@ -69,5 +68,3 @@ tags: [javscrpit,jQuery,prototype,animation]
 	};
 })(jQuery);
 ```
-
-## mod
