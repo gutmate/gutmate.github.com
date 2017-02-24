@@ -9,7 +9,7 @@ tags: [javscrpit,jQuery,prototype,animation]
 # jQuery image animation
 
 ```js
-/**
+/** 
  * 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로 하며 파일명 또한 0000~9999까지로 만든다. (네자리 숫자)
  * imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
  *
