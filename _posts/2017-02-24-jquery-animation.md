@@ -15,7 +15,7 @@ jQuery image animation
  * imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
  *
  * 이미지 확장자는 png/jpg/gif 로 한다.
- * @var rePath; 첫번째 문자 ~ 4자리 숫자.png/jpg/gif 의 전까지의 값을 반환 (4자리 숫자.png/jpg/gif(0000.jpg) 포함되지 않는다.)
+ * @var rePath; [첫번째 문자] ~ [4자리 숫자.] 전까지의 값을 반환 (4자리 숫자.png/jpg/gif(0000.jpg) 포함되지 않는다.)
  * @param {number} 이미지 컷 수
  * @param {number} 애니메이션 전환 속도
  * @param {number} 애니메이션 시작 대기시간
