@@ -71,8 +71,13 @@ jQuery image animation
 ```
 
 ### 실행
+* html
+```html
+<img src="../images/animation_0000.png" class="animation_img">
+```
+* javascript
 ```js
 $(document).ready(function(){
-	$('.img_class').animationImg(9,100,3000);
+	$('.animation_img').animationImg(9,100,3000);
 });
 ```
