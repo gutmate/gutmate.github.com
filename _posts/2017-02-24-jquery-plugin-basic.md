@@ -3,7 +3,7 @@ layout: post
 title:  'jQuery plugin 만들기'
 author: formation.p
 date: 2017-02-24 10:30
-tags: [css,animation,keyframes]
+tags: [javscrpit,jQuery,prototype]
 ---
 
 ## jQuery 플러그인 제작 프로세스
