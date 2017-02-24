@@ -1,3 +1,11 @@
+---
+layout: post
+title:  'jQuery image animation'
+author: formation.p
+date: 2017-02-24 17:00
+tags: [javscrpit,jQuery,prototype,animation]
+---
+
 #jQuery image animation
 
 ```js
