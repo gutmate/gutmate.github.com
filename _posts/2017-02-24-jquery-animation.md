@@ -69,3 +69,5 @@ tags: [javscrpit,jQuery,prototype,animation]
 	};
 })(jQuery);
 ```
+
+## mod
