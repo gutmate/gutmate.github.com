@@ -7,6 +7,7 @@ sitemap: yes
 tags:
   - about
 ---
+![formation.p](/files/authors/formation.p.png)
 
 개발과 관련된 내용을 포스팅합니다.
 
