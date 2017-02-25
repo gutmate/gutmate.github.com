@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: formation.p의 About
 permalink: /about/
 image: /files/covers/blog.jpg
 sitemap: yes
