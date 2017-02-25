@@ -1116,6 +1116,10 @@ body.page-template {
 body.about-template .about-img {
   margin-bottom: 28px;
 }
+.about-img img {
+  width: 100%;
+  max-width: 300px;
+}
 
 /* minimal responsive stuff by @@iolo */
 
