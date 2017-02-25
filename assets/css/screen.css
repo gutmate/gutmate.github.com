@@ -1128,6 +1128,11 @@ body.page-template {
 }
 
 @media only screen and (max-width: 768px) {
+    #post-list .post-title,
+    #post-list .post-excerpt,
+    #post-list .post-tags {
+        max-width: 768px;
+    }
     .visible-lg, .hidden-sm {
         display: none !important;
     }
@@ -1162,11 +1167,12 @@ body.page-template {
     }
 
     #logo {
-        position: absolute;
         display: table;
+        position: absolute;
         left: 0;
         /* right: 50px; */
         top: 0;
+        width: 100%;
         height: 50px;
         /* margin: 0 auto; */
         text-align: center;
