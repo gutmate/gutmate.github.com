@@ -1112,8 +1112,9 @@ body.page-template {
 }
 
 /* about */
-.about-template .about-img {
-  margin-top: 30px;
+
+body.about-template .about-img {
+  margin-bottom: 28px;
 }
 
 /* minimal responsive stuff by @@iolo */
