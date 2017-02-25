@@ -29,7 +29,7 @@ jQuery image animation
  * @param {number} 애니메이션 전환 속도
  * @param {number} 애니메이션 시작 대기시간
  */
-(function($){
+;(function($){
     $.fn.animationImg = function(steps, duration, delay) {
         var $this = $(this);
         var path = $this.attr('src');

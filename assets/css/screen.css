@@ -1132,7 +1132,7 @@ body.about-template .about-img {
 }
 .about-img img {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 /* minimal responsive stuff by @@iolo */
