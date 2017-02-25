@@ -53,7 +53,7 @@
     font-family: 'NanumCoding';
     font-style: normal;
     font-weight: 700;
-    src: local('NanumGothicCoding-Bold'),
+    src: local('NanumGothicCoding'),
     url(NanumCoding-Bold.eot) format('eot'),
     url(NanumCoding-Bold.woff) format('woff2'),
     url(NanumCoding-Bold.woff) format('woff'),
