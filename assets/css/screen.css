@@ -1142,10 +1142,6 @@ body.about-template .about-img {
   margin-top: 20px;
 }
 
-.disqus-footer__wrapper {
-  display: none !important;
-}
-
 /* minimal responsive stuff by @@iolo */
 
 @media only screen and (min-width: 1025px) {
