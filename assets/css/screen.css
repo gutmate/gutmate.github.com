@@ -1135,6 +1135,12 @@ body.about-template .about-img {
   max-width: 200px;
 }
 
+#disqus_thread {
+  background: #fff;
+  padding: 20px 45px;
+  margin-top: 20px;
+}
+
 /* minimal responsive stuff by @@iolo */
 
 @media only screen and (min-width: 1025px) {
