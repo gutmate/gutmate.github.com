@@ -8,8 +8,6 @@ sitemap: yes
 tags:
   - about
 ---
-![](/files/authors/formation.p.png)
-
 개발과 관련된 내용을 포스팅합니다.
 
 ## 연락처
