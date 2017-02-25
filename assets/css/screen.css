@@ -1497,7 +1497,7 @@ body.page-template {
         display: none;
     }
 
-    #post-links {
+    /*#post-links {
         margin-top: 1em;
         display: block;
     }
@@ -1513,7 +1513,7 @@ body.page-template {
     }
 
     #post-links p {
-    }
+    }*/
 
     /* author */
     body.author-template {
@@ -1728,4 +1728,24 @@ body.page-template {
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
     }
+}
+
+@media only screen and (max-width: 768px) {
+  #post-links {
+      margin-top: 1em;
+      display: block;
+  }
+
+  #post-prev,
+  #post-next {
+      display: block;
+      width: 100%;
+  }
+
+  #post-links h3 {
+      line-height: 100px;
+  }
+
+  #post-links p {
+  }
 }
