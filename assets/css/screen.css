@@ -1104,7 +1104,7 @@ body.page-template {
 
 /* minimal responsive stuff by @@iolo */
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 768px) {
     .visible-sm, .hidden-lg {
         display: none !important;
     }
@@ -1118,7 +1118,7 @@ body.page-template {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .visible-lg, .hidden-sm {
         display: none !important;
     }
