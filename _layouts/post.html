@@ -1,5 +1,6 @@
 ---
 layout: default
+disqus: true
 ---
 <div id="navbar" class="container">
     <h5><a id="link-back" href="/">Back to Posts</a></h5>
@@ -36,6 +37,11 @@ layout: default
         </a>
     </div>
 </div>
+
+<!-- Add Disqus Comments -->
+{% if page.disqus %}
+    {% include disqus.html %}
+{% endif %}
 
 <div id="post-links" class="container">
     {% assign prev = page.previous %}
