@@ -1115,6 +1115,7 @@ body.page-template {
 
 body.about-template .about-img {
   margin-bottom: 28px;
+  text-align: center;
 }
 .about-img img {
   width: 100%;
