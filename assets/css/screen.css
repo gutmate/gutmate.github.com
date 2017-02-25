@@ -49,7 +49,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 5px;
@@ -1113,7 +1113,7 @@ body.page-template {
 
 /* minimal responsive stuff by @@iolo */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
     .visible-sm, .hidden-lg {
         display: none !important;
     }
@@ -1127,7 +1127,7 @@ body.page-template {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     #post-list .post-title,
     #post-list .post-excerpt,
     #post-list .post-tags {
