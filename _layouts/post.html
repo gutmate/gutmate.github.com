@@ -36,12 +36,15 @@ comments: true
             <span>Read more posts by this author</span>
         </a>
     </div>
+
+    <!-- Add Disqus Comments -->
+    {% if page.disqus %}
+        {% include disqus.html %}
+    {% endif %}
+
 </div>
 
-<!-- Add Disqus Comments -->
-{% if page.disqus %}
-    {% include disqus.html %}
-{% endif %}
+
 
 <div id="post-links" class="container">
     {% assign prev = page.previous %}

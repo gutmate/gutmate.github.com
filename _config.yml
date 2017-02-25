@@ -7,7 +7,7 @@ description: |
 baseurl: ''
 url:
 timezone: Asia/Seoul
-disqus: jinhyungpark
+disqus: gutmate
 
 repository: github.com/gutmate
 
