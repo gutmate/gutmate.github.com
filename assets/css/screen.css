@@ -1550,6 +1550,28 @@ body.page-template {
     }
 }
 
+/* mobile */
+
+@media only screen and (max-width: 767px) {
+  #post-links {
+      margin-top: 1em;
+      display: block;
+  }
+
+  #post-prev,
+  #post-next {
+      display: block;
+      width: 100%;
+  }
+
+  #post-links h3 {
+      line-height: 100px;
+  }
+
+  #post-links p {
+  }
+}
+
 /* responsive images - mobile(2x) */
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -1728,24 +1750,4 @@ body.page-template {
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
     }
-}
-
-@media only screen and (max-width: 768px) {
-  #post-links {
-      margin-top: 1em;
-      display: block;
-  }
-
-  #post-prev,
-  #post-next {
-      display: block;
-      width: 100%;
-  }
-
-  #post-links h3 {
-      line-height: 100px;
-  }
-
-  #post-links p {
-  }
 }
