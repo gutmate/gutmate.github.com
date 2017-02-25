@@ -4,6 +4,7 @@ title:  '업데이트!!'
 author: formation.p
 date: 2017-02-19 15:00
 tags: [congratulation,notice]
+disqus: true
 image: /files/covers/solid-state-logic.jpg
 cover:
   title: '80-channel Solid State Logic (SSL) XL 9000 K Series Console at Audio Mix House, Studio B'
