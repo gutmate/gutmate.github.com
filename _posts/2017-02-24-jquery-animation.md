@@ -23,7 +23,7 @@ jQuery image animation
 (function($){
 	$.fn.animationImg = function(steps, duration, delay) {
 		var $this = $(this);
-		var path = $this.attr('src');
+	    var path = $this.attr('src');
 		var rePath = /.+(?=[0-9]{4}.)/gm;
 		var matchPath = path.match(rePath); //4자리 숫자.확장자를 제외한 경로부분 반환
 		var reversePath = path.replace(rePath,''); //4자리 숫자.확장자 반환

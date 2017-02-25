@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  '[CSS] background-image animation keyframes '
+title:  'background-image animation keyframes '
 author: formation.p
 date: 2017-02-21 16:00
 tags: [css,animation,keyframes]
 ---
 
-# [CSS] background-image @keyframes 이용해서 animation 구현하기 (gif)
+# background-image @keyframes 이용해서 animation 구현하기 (gif)
 
 ## 적용방법
 #### 무한반복 (infinite)

@@ -27,7 +27,8 @@ pre,
 code,
 tt,
 kbd {
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: D2Coding,NanumGotincCoding,monospace;
     font-weight: 300;
 }
 

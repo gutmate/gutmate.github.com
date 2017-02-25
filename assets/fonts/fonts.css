@@ -39,6 +39,33 @@
 
 /*-------------------------------------------------------*/
 /*
+ * D2Coding
+ */
+@font-face {
+ font-family: 'D2Coding';
+ font-style: normal;
+ font-weight: 400;
+ src: local('D2Coding');
+ /* url(KakaoOTF-aLt.eot) format('eot'),
+ url(KakaoOTF-aLt.woff2) format('woff2'),
+ url(KakaoOTF-aLt.woff) format('woff'),
+ url(KakaoOTF-aLt.otf) format('opentype'); */
+}
+
+@font-face {
+    font-family: 'D2Coding';
+    font-style: normal;
+    font-weight: 600;
+    src: local('D2Coding Bold');
+    /* url(KakaoOTF-bRg.eot) format('eot'),
+    url(KakaoOTF-bRg.woff2) format('woff2'),
+    url(KakaoOTF-bRg.woff) format('woff'),
+    url(KakaoOTF-bRg.otf) format('opentype'); */
+}
+
+
+/*-------------------------------------------------------*/
+/*
  * Noto Sans KR
  * http://www.google.com/get/noto/
  * http://www.google.com/fonts/earlyaccess#Noto+Sans+KR
@@ -141,4 +168,3 @@
     url(SpoqaHanSans-Bold.ttf) format('truetype'),
     url(SpoqaHanSans-Bold.svg) format('svg');
 }
-
