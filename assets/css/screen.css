@@ -27,8 +27,7 @@ pre,
 code,
 tt,
 kbd {
-    /* font-family: monospace; */
-    font-family: D2Coding,NanumGotincCoding,monospace;
+    font-family: 'D2Coding',NanumGotincCoding,monospace;
     font-weight: 300;
 }
 
@@ -1552,9 +1551,9 @@ body.page-template {
         font-weight: 200; /* @@iolo 200 for retina only! */
     }
 
-    #logo {
+    /* #logo {
         background-image: url(../images/mo/tech_logo@2x.png);
-    }
+    } */
 
     #menu-toggle {
         background-image: url(../images/mo/icon_menu@2x.png);
@@ -1642,9 +1641,9 @@ body.page-template {
         font-weight: 200; /* @@iolo 200 for retina only! */
     }
 
-    #logo {
+    /* #logo {
         background-image: url(../images/mo/tech_logo@3x.png);
-    }
+    } */
 
     #menu-toggle {
         background-image: url(../images/mo/icon_menu@3x.png);

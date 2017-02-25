@@ -45,22 +45,20 @@
  font-family: 'D2Coding';
  font-style: normal;
  font-weight: 400;
- src: local('D2Coding');
- /* url(KakaoOTF-aLt.eot) format('eot'),
- url(KakaoOTF-aLt.woff2) format('woff2'),
- url(KakaoOTF-aLt.woff) format('woff'),
- url(KakaoOTF-aLt.otf) format('opentype'); */
+ src: local('D2Coding'),
+ url(D2Coding.eot) format('eot'),
+ url(D2Coding.woff) format('woff'),
+ url(D2Coding.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'D2Coding';
     font-style: normal;
     font-weight: 600;
-    src: local('D2Coding Bold');
-    /* url(KakaoOTF-bRg.eot) format('eot'),
-    url(KakaoOTF-bRg.woff2) format('woff2'),
-    url(KakaoOTF-bRg.woff) format('woff'),
-    url(KakaoOTF-bRg.otf) format('opentype'); */
+    src: local('D2Coding Bold'),
+    url(D2CodingBold.eot) format('eot'),
+    url(D2CodingBold.woff) format('woff'),
+    url(D2CodingBold.otf) format('opentype');
 }
 
 
