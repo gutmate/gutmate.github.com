@@ -1160,7 +1160,7 @@ body.about-template .about-img {
 @media only screen and (max-width: 1024px) {
     #disqus_thread {
       padding: 20px;
-      margin-top: 0;
+      margin-top: 1em;
     }
 
     #post-list .post-title,
