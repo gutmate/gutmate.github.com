@@ -30,6 +30,21 @@ kbd {
     font-family: 'NanumCoding',monospace;
     font-weight: 300;
 }
+kbd {
+  display: inline-block;
+  margin: 0 1px;
+  padding: 1px 8px;
+  font-size: 10px;
+  font-size: .625rem;
+  font-weight: bold;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
 
 b, strong, optgroup {
     font-weight: 400;
