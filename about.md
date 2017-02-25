@@ -19,8 +19,8 @@ tags:
 
 ## 연락처
 
-* Homepage : [https://gutmate.github.io](https://gutmate.github.io)
-* GitHub : [http://github.com/gutmate](http://github.com/gutmate)
+* Homepage : [gutmate.github.io](http://gutmate.github.io)
+* GitHub : [github.com/gutmate](http://github.com/gutmate)
 * Email : [gutmate@gmail.com](mailto:gutmate@gmail.com)
 
 Powered by [GitHub Pages](https://pages.github.com) and [Jekyll](https://jekyllrb.com).
