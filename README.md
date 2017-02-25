@@ -49,7 +49,7 @@ github pages 테스트 중입니다.
  - 참고: 최종적으로 사용자 포스트 목록 페이지의 url은 http://tech.kakao.com/tags/tag-name/
 2. 파일 상단에 [front matter] 작성
  - layout: tag # 레이아웃(필수)
- - name: `tag-name` # post의 tags 배열의 항목과 매칭(필수). 왠만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
+ - name: `tag-name` # post의 tags 배열의 항목과 매칭(필수). 웬만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
  - title: ... # 좀 더 길고 구체적인 설명(필수)
  - image: http://... # 태그 이미지(선택)
 3. 내용은 필요없음
