@@ -17,7 +17,7 @@ tags:
 > I always have to think <br>
 > It tires me out
 
-## 연락처
+## Contact
 
 * Homepage : [gutmate.github.io](http://gutmate.github.io)
 * GitHub : [github.com/gutmate](http://github.com/gutmate)
