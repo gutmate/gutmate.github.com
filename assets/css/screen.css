@@ -33,9 +33,7 @@ kbd {
 kbd {
   display: inline-block;
   margin: 0 1px;
-  padding: 1px 8px;
-  font-size: 10px;
-  font-size: .625rem;
+  padding: 0 10px;
   font-weight: bold;
   color: #555;
   vertical-align: middle;
