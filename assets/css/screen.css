@@ -878,7 +878,7 @@ body.tag-template #navbar {
 
 #post-content blockquote {
     margin: 28px 0;
-    padding: 28px;
+    padding: 10px 28px;
     border-left: 3px solid #9ce4b2;
 }
 
