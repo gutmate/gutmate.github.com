@@ -1,6 +1,7 @@
 ---
 layout: about
-title: formation.p About
+title: About
+description: How do you think?
 permalink: /about/
 image: /files/covers/blog.jpg
 aboutimg: /files/authors/formation.p.png
