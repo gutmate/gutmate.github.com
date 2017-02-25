@@ -11,7 +11,8 @@
     </p>
     <div class="post-meta">
         {% assign author = site.authors | where: 'name', post.author | first %}
-        <a href="{{ site.baseurl }}/authors/{{ post.author }}">
+        <!-- <a href="{{ site.baseurl }}/authors/{{ post.author }}"> --><!-- 작성자가 작성한 글 모아보기 -->
+        <a href="{{ site.baseurl }}/about/"><!-- About 으로 이동하기 -->
             <div class="author-image"
                  {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
                 <span class="sr-only">{{ author.name }}'s profile image</span>
