@@ -27,7 +27,7 @@ pre,
 code,
 tt,
 kbd {
-    font-family: 'D2Coding',NanumGotincCoding,monospace;
+    font-family: 'NanumCoding',monospace;
     font-weight: 300;
 }
 
@@ -1164,11 +1164,11 @@ body.page-template {
     #logo {
         position: absolute;
         display: table;
-        left: 50px;
-        right: 50px;
+        left: 0;
+        /* right: 50px; */
         top: 0;
         height: 50px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         text-align: center;
         /* background-image: url(../images/mo/tech_logo.png); */
         /* background-size: 127px auto; */

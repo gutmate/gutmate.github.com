@@ -36,24 +36,26 @@
 
 /*-------------------------------------------------------*/
 /*
- * D2Coding
+ * NanumCoding
  */
 @font-face {
- font-family: 'D2Coding';
- font-style: normal;
- font-weight: 400;
- src: local('D2Coding'),
- url(D2Coding.eot) format('eot'),
- url(D2Coding.woff) format('woff'),
- url(D2Coding.otf) format('opentype');
+    font-family: 'NanumCoding';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumGothicCoding'),
+    url(NanumCoding.eot) format('eot'),
+    url(NanumCoding.woff) format('woff2'),
+    url(NanumCoding.woff) format('woff'),
+    url(NanumCoding.otf) format('opentype');
 }
 
 @font-face {
-    font-family: 'D2Coding';
+    font-family: 'NanumCoding';
     font-style: normal;
-    font-weight: 600;
-    src: local('D2Coding Bold'),
-    url(D2CodingBold.eot) format('eot'),
-    url(D2CodingBold.woff) format('woff'),
-    url(D2CodingBold.otf) format('opentype');
+    font-weight: 700;
+    src: local('NanumGothicCoding-Bold'),
+    url(NanumCoding-Bold.eot) format('eot'),
+    url(NanumCoding-Bold.woff) format('woff2'),
+    url(NanumCoding-Bold.woff) format('woff'),
+    url(NanumCoding-Bold.otf) format('opentype');
 }
