@@ -186,7 +186,7 @@ for small screen(<720px):
     position: absolute;
     top: 0;
     left: 30px;
-    width: 162px;
+    /* width: 162px; */
     height: 60px;
     margin: 0 0;
     padding: 0;
@@ -199,6 +199,7 @@ for small screen(<720px):
     vertical-align: middle;
     font-weight: 400;
     font-size: 26px;
+    color: #1e1e1e;
 }
 
 #menu {
@@ -1168,6 +1169,7 @@ body.page-template {
         top: 0;
         height: 50px;
         margin: 0 auto;
+        text-align: center;
         /* background-image: url(../images/mo/tech_logo.png); */
         /* background-size: 127px auto; */
     }
