@@ -194,8 +194,6 @@ Link: [Google](https://google.com, "google link")
 <http://example.com/>
 <address@example.com>
 
-~~error~~
-
 ## 2.7. 강조
 ```
 *single asterisks*
@@ -213,12 +211,10 @@ __double underscores__
 ~~cancelline~~
 
 ## 2.8. 이미지
-
 ```
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
-
 ![석촌호수 러버덕](http://cfile6.uf.tistory.com/image/2426E646543C9B4532C7B0)
 ![석촌호수 러버덕](http://cfile6.uf.tistory.com/image/2426E646543C9B4532C7B0 "RubberDuck")
 
