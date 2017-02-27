@@ -186,6 +186,18 @@ syntax: [Title](link)
 Link: [Google](https://google.com, "google link")
 
 
+
+* 자동연결
+```
+<http://example.com/>
+<address@example.com>
+```
+<http://example.com/>
+<address@example.com>
+
+
+
+
 ## 2.7. 강조
 ```
 *single asterisks*
