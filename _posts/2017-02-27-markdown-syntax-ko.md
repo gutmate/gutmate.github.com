@@ -185,7 +185,7 @@ syntax: [Title](link)
 ```
 Link: [Google](https://google.com "google link")
 
-*
+* 자동
 ```
 <http://example.com/>
 <address@example.com>
