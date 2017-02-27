@@ -387,7 +387,7 @@ for small screen(<720px):
     width: 100%;
     height: 310px;
     padding: 0;
-    background: no-repeat center fixed;
+    background: no-repeat center -160px fixed;
     background-size: cover;
 }
 
