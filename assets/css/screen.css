@@ -729,7 +729,6 @@ body.page-template #cover {
 
 body.home-template #cover {
     background-image: url(../images/default_blog_cover.jpg);
-    background-position: center -160px;
 }
 
 body.post-template #cover {
