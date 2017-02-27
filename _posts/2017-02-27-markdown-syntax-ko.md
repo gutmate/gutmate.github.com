@@ -185,7 +185,7 @@ syntax: [Title](link)
 ```
 Link: [Google](https://google.com "google link")
 
-*
+자동링크
 ```
 <http://example.com/>
 <address@example.com>
@@ -200,14 +200,14 @@ Link: [Google](https://google.com "google link")
 _single underscores_
 **double asterisks**
 __double underscores__
-++underline++
+__underline__
 ~~cancelline~~
 ```
 *single asterisks*
 _single underscores_
 **double asterisks**
 __double underscores__
-++underline++
+__underline__
 ~~cancelline~~
 
 ## 2.8. 이미지
