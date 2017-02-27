@@ -183,9 +183,9 @@ Link: [Google][googlelink]
 ```
 syntax: [Title](link)
 ```
-Link: [Google](https://google.com, "google link")
+Link: [Google](https://google.com "google link")
 
-** 자동연결
+* 자동연결
 ```
 <http://example.com/>
 <address@example.com>
