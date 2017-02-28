@@ -8,7 +8,43 @@ tags:
   - countdown
 ---
 
-##자바스크립트 카운트 다운
+## Pure Javascript Countdown Example (Minute&Second Base)
+
+```javascript
+function countdown( elementName, minutes, seconds )
+{
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "countdown's over!";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+countdown( "countdown", 1, 5 );
+countdown( "countdown2", 100, 0 );
+```
+
+## Pure Javascript Countdown Example (Second Base)
+
 ```javascript
 function countdown( elementId, seconds ){
   var element, endTime, hours, mins, msLeft, time;
@@ -38,4 +74,4 @@ function countdown( elementId, seconds ){
 countdown('countdown', 43200);	 // second base
 ```
 
-> 출처: [http://zinee-world.tistory.com/287](http://zinee-world.tistory.com/287)
+> 출처: [zineeworld](http://zinee-world.tistory.com/287)
