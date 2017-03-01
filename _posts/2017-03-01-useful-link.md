@@ -1,11 +1,10 @@
 ---
 layout: post
-title: '자바스크립트 카운트다운'
+title: '유용한 링크'
 author: formation.p
-date: '2017-02-28 10:55'
+date: '2017-03-01 23:45'
 tags:
-  - javascript
-  - countdown
+  - link
 ---
 
 ## FRONT-END
