@@ -81,13 +81,9 @@ jQuery image animation
 
 ## 실행
 
-* html
-
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
 ```
-
-* javascript
 
 ```javascript
 $(document).ready(function(){
