@@ -24,7 +24,7 @@ jQuery image animation
  *
  * 이미지 확장자는 png/jpg/gif 로 한다.
  * @var rePath; [첫번째 문자] ~ [4자리 숫자.] 전까지의 값을 반환
- * (4자리 숫자.png/jpg/gif(0000.jpg) 포함되지 않는다.)
+ * (4자리 숫자.png/jpg/gif ([ex] 0000.jpg)는 반환값에 포함되지 않는다.)
  * @steps {number} 이미지 컷 수
  * @duration {number} 애니메이션 전환 속도
  * @delay {number} 애니메이션 시작 대기시간
@@ -81,13 +81,13 @@ jQuery image animation
 
 ## 실행
 
-html
+* html
 
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
 ```
 
-javascript
+* javascript
 
 ```javascript
 $(document).ready(function(){
