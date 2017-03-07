@@ -20,7 +20,6 @@ tags:
  * @function {obj} //이벤트를 수신하여 처리할 객체, 해당 객체는 EventListener 인테페이스를 구현하거나 단순한 자바스크립트 함수여야 한다.
  * @useCapture {boolean} //true = Capturing, false = Bubling, default = false
  */
-
 element.addEventListener(type, function[, useCapture]);
 
 /** attachEvent
@@ -28,7 +27,6 @@ element.addEventListener(type, function[, useCapture]);
  * IE8 이하
  * capture 지원하지 않는다
  */
-
 element.attachEvent(type, function);
 ```
 
@@ -40,10 +38,8 @@ function addEvent() {
 
   for(var i = 0, f = el.length; i < f; i++) {
     if(el[i].addEventListener) {
-      //modern browser
       el[i].addEventListener('click', thisTarget);
     } else if(el[i].attachEvent) {
-      //IE8 이하
       el[i].attachEvent('onclick', thisTarget);
     } else {
       el[i].onclick = thisTarget;
@@ -60,11 +56,11 @@ function thisTarget(event) {
 
 ```javascript
 function AddEvent(a, b) {
-  var div = document.getElementById("div");
-  if(div.addEventListener) {
-    div.addEventListener("click", function(a, b) { test(a, b); }, false);
+  var el = document.getElementById("div");
+  if(el.addEventListener) {
+    el.addEventListener("click", function(a, b) { test(a, b); }, false);
   } else {
-    div.attachEvent("onclick", function(a, b) { test(a, b); });
+    el.attachEvent("onclick", function(a, b) { test(a, b); });
   }
 }
   
