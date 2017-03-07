@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS position:fixed focus event issue'
+title: 'iOS position fixed focus event issue'
 author: formation.p
 date: '2017-03-03 18:00'
 tags:
