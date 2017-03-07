@@ -7,7 +7,7 @@ tags:
   - javascript
 ---
 
-```js
+```javascript
 (function() {
   var el = document.querySelectorAll('div');
   
