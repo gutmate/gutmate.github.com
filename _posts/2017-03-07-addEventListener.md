@@ -27,7 +27,7 @@ for(var i = 0, f = el.length; i < f; i++) {
     el[i].addEventListener('click', thisTarget);
   } else if(el[i].attachEvent) {
     //IE 8 이하
-    el[i].attachEvent('click', thisTarget);
+    el[i].attachEvent('onlick', thisTarget);
   } else {
     el[i].onclick = thisTarget;
   }
