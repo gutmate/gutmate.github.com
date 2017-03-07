@@ -25,9 +25,9 @@ for(var i = 0, f = el.length; i < f; i++) {
   if(el[i].addEventListener) {
     //modern browser
     el[i].addEventListener('click', thisTarget);
-  } else if(el[i].attatchEvent) {
+  } else if(el[i].attachEvent) {
     //IE 8 이하
-    el[i].attatchEvent('click', thisTarget);
+    el[i].attachEvent('click', thisTarget);
   } else {
     el[i].onclick = thisTarget;
   }
