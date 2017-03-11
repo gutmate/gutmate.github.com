@@ -1143,6 +1143,9 @@ body.about-template .about-img {
 }
 
 /* code */
+#content .highlighter-rouge {
+  position: relative;
+}
 #content .highlighter-rouge .highlight code {
   position: relative;
   background: inherit;
@@ -1151,7 +1154,7 @@ body.about-template .about-img {
   padding: 30px;
   top: 0;
 }
-#content .highlighter-rouge .highlight code:before {
+#content .highlighter-rouge:before {
   background: #f4f1ce;
   color: rgba(0, 0, 0, 0.5);
   content: "Code";
@@ -1167,11 +1170,12 @@ body.about-template .about-img {
   position: absolute;
   text-transform: uppercase;
   top: 0;
+  z-index: 10;
 }
 #content .highlighter-rouge.language-html code {
   position: relative;
 }
-#content .highlighter-rouge.language-html code:before {
+#content .highlighter-rouge.language-html:before {
   background: #6ecd56;
   color: white;
   content: "HTML";
@@ -1191,7 +1195,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-css code {
   position: relative;
 }
-#content .highlighter-rouge.language-css code:before {
+#content .highlighter-rouge.language-css:before {
   background: #f16529;
   color: white;
   content: "CSS";
@@ -1211,7 +1215,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-scss code {
   position: relative;
 }
-#content .highlighter-rouge.language-scss code:before {
+#content .highlighter-rouge.language-scss:before {
   background: #616db3;
   color: white;
   content: "Sass";
@@ -1220,7 +1224,7 @@ body.about-template .about-img {
   font-size: 0.6rem;
   font-weight: 700;
   height: 1rem;
-  left: -1px;
+  left: -5px;
   letter-spacing: 0.1em;
   line-height: 1rem;
   padding: 0 0.5em;
@@ -1231,7 +1235,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-javascript code {
   position: relative;
 }
-#content .highlighter-rouge.language-javascript code:before {
+#content .highlighter-rouge.language-javascript:before {
   background: #6ecd56;
   color: white;
   content: "JavaScript";
@@ -1251,7 +1255,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-bash code {
   position: relative;
 }
-#content .highlighter-rouge.language-bash code:before {
+#content .highlighter-rouge.language-bash:before {
   background: #33a9dc;
   color: white;
   content: "bash";
@@ -1271,7 +1275,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-c code {
   position: relative;
 }
-#content .highlighter-rouge.language-c code:before {
+#content .highlighter-rouge.language-c:before {
   background: #33a9dc;
   color: white;
   content: "C";
@@ -1291,7 +1295,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-java code {
   position: relative;
 }
-#content .highlighter-rouge.language-java code:before {
+#content .highlighter-rouge.language-java:before {
   background: #616db3;
   color: white;
   content: "Java";
@@ -1311,7 +1315,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-sql code {
   position: relative;
 }
-#content .highlighter-rouge.language-sql code:before {
+#content .highlighter-rouge.language-sql:before {
   background: #6ecd56;
   color: white;
   content: "SQL";
@@ -1331,7 +1335,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-json code {
   position: relative;
 }
-#content .highlighter-rouge.language-json code:before {
+#content .highlighter-rouge.language-json:before {
   background: #f16529;
   color: white;
   content: "json";
@@ -1351,7 +1355,7 @@ body.about-template .about-img {
 #content .highlighter-rouge.language-typescript code {
   position: relative;
 }
-#content .highlighter-rouge.language-typescript code:before {
+#content .highlighter-rouge.language-typescript:before {
   background: #616db3;
   color: white;
   content: "typescript";
