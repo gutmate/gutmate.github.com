@@ -1228,8 +1228,8 @@ body.about-template .about-img {
   content: "php";
 }
 #content .highlighter-rouge.language-typescript:before {
-  background: #616db3;
-  color: black;
+  background: #294e80;
+  color: white;
   content: "typescript";
 }
 #content .highlighter-rouge.language-typescript code .err {
