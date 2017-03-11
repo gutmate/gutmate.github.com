@@ -1163,7 +1163,7 @@ body.about-template .about-img {
   font-size: 0.6rem;
   font-weight: 700;
   height: 1rem;
-  left: -1px;
+  left: -2px;
   letter-spacing: 0.1em;
   line-height: 1rem;
   padding: 0 0.5em;
@@ -1172,205 +1172,65 @@ body.about-template .about-img {
   top: 0;
   z-index: 10;
 }
-#content .highlighter-rouge.language-html code {
-  position: relative;
-}
 #content .highlighter-rouge.language-html:before {
   background: #f1672c;
   color: white;
   content: "HTML";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-css code {
-  position: relative;
 }
 #content .highlighter-rouge.language-css:before {
   background: #30a9dc;
   color: white;
   content: "CSS";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-scss code {
-  position: relative;
 }
 #content .highlighter-rouge.language-scss:before {
-  background: #616db3;
-  color: black;
+  background: #cc6699;
+  color: white;
   content: "Sass";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -5px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-javascript code {
-  position: relative;
 }
 #content .highlighter-rouge.language-javascript:before {
-  background: #f1bf26;
+  background: #e9bd18;
   color: white;
   content: "JavaScript";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-bash code {
-  position: relative;
 }
 #content .highlighter-rouge.language-bash:before {
-  background: #33a9dc;
+  background: #21991e;
   color: white;
   content: "bash";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-c code {
-  position: relative;
 }
 #content .highlighter-rouge.language-c:before {
-  background: #33a9dc;
+  background: #0000aa;
   color: white;
   content: "C";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-java code {
-  position: relative;
 }
 #content .highlighter-rouge.language-java:before {
-  background: #616db3;
-  color: black;
+  background: #e9bd18;
+  color: white;
   content: "Java";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-sql code {
-  position: relative;
 }
 #content .highlighter-rouge.language-sql:before {
   background: #6ecd56;
   color: white;
   content: "SQL";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
-}
-#content .highlighter-rouge.language-json code {
-  position: relative;
 }
 #content .highlighter-rouge.language-json:before {
-  background: #f16529;
+  background: #e9bd18;
   color: white;
   content: "json";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
 }
-#content .highlighter-rouge.language-typescript code {
-  position: relative;
+#content .highlighter-rouge.language-ruby:before {
+  background: #d73a2e;
+  color: white;
+  content: "ruby";
+}
+#content .highlighter-rouge.language-php:before {
+  background: #633aae;
+  color: white;
+  content: "php";
 }
 #content .highlighter-rouge.language-typescript:before {
   background: #616db3;
   color: black;
   content: "typescript";
-  display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
-  left: -1px;
-  letter-spacing: 0.1em;
-  line-height: 1rem;
-  padding: 0 0.5em;
-  position: absolute;
-  text-transform: uppercase;
-  top: 0;
 }
 #content .highlighter-rouge.language-typescript code .err {
   background-color: transparent;
