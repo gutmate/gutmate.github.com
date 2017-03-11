@@ -11,6 +11,6 @@ tags:
 
 2. 명령어 입력
 
-```
-$ git config --global gui.encoding utf-8 
+```bash
+$ git config --global gui.encoding utf-8
 ```
