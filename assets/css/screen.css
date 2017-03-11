@@ -1176,7 +1176,7 @@ body.about-template .about-img {
   position: relative;
 }
 #content .highlighter-rouge.language-html:before {
-  background: #6ecd56;
+  background: #f1672c;
   color: white;
   content: "HTML";
   display: inline-block;
@@ -1196,7 +1196,7 @@ body.about-template .about-img {
   position: relative;
 }
 #content .highlighter-rouge.language-css:before {
-  background: #f16529;
+  background: #30a9dc;
   color: white;
   content: "CSS";
   display: inline-block;
@@ -1217,7 +1217,7 @@ body.about-template .about-img {
 }
 #content .highlighter-rouge.language-scss:before {
   background: #616db3;
-  color: white;
+  color: black;
   content: "Sass";
   display: inline-block;
   font-family: NanumCoding, Arial, sans-serif;
@@ -1236,7 +1236,7 @@ body.about-template .about-img {
   position: relative;
 }
 #content .highlighter-rouge.language-javascript:before {
-  background: #6ecd56;
+  background: #f1bf26;
   color: white;
   content: "JavaScript";
   display: inline-block;
@@ -1297,7 +1297,7 @@ body.about-template .about-img {
 }
 #content .highlighter-rouge.language-java:before {
   background: #616db3;
-  color: white;
+  color: black;
   content: "Java";
   display: inline-block;
   font-family: NanumCoding, Arial, sans-serif;
@@ -1357,7 +1357,7 @@ body.about-template .about-img {
 }
 #content .highlighter-rouge.language-typescript:before {
   background: #616db3;
-  color: white;
+  color: black;
   content: "typescript";
   display: inline-block;
   font-family: NanumCoding, Arial, sans-serif;
