@@ -891,7 +891,7 @@ body.tag-template #navbar {
     /* background: #f4f4f4; */
     /* border: 1px solid #d4d4d4; */
     width: 100%;
-    /* padding: 10px; */
+    padding: 30px;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
@@ -1147,12 +1147,12 @@ body.about-template .about-img {
   position: relative;
 }
 #content .highlighter-rouge .highlight code {
-  position: relative;
+  /*position: relative;*/
   background: inherit;
   color: inherit;
-  display: block;
-  padding: 30px;
-  top: 0;
+  /*display: block;*/
+  /*padding: 30px;*/
+  /*top: 0;*/
 }
 #content .highlighter-rouge:before {
   background: #f4f1ce;
