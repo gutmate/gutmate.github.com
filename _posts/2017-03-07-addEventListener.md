@@ -9,11 +9,11 @@ tags:
 
 # addEventListener, attachEvent
 
-두 메소드의 기능은 같지만 브라우저에서 지원하는 메소드가
+두 메소드의 기능은 같지만 브라우저에서 **지원**하는 `메소드`가
 다르기 때문에 분기 처리 해주어야 한다.
 
 ```javascript
-/** addEventListener 
+/** addEventListener
  *
  * IE9+, chrome
  * @type {string} //이벤트 타입을 구분하기 위한 문자열 (ex click, blur, drag, drop, ...)
@@ -63,11 +63,8 @@ function AddEvent(a, b) {
     el.attachEvent("onclick", function(a, b) { test(a, b); });
   }
 }
-  
+
 function test(a, b) {
   alert(a + b);
 }
 ```
-
-
-
