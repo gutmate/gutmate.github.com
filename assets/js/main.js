@@ -1,6 +1,6 @@
 var txtTarget = $('.main_cover');
-var txt = txtTarget.html();
-var leng = txt.length;
+var txt = txtTarget.html() || '';
+var leng = txt.length || 0;
 var timer = '';
 var cnt = 0;
 
