@@ -1,4 +1,4 @@
-var txtTarget = $('#cover p');
+var txtTarget = $('.main_cover');
 var txt = txtTarget.html();
 var leng = txt.length;
 var timer = '';
