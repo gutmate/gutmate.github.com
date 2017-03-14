@@ -5,6 +5,7 @@ var timer = '';
 var cnt = 0;
 
 $(window).load(function() {
+  txtTarget.css('opacity',1);
   typing();
 });
 function typing(){

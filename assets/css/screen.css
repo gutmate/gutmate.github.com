@@ -417,6 +417,7 @@ for small screen(<720px):
 }
 
 #cover p {
+    opacity: 0;
     font-size: 14px;
     line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
 }
