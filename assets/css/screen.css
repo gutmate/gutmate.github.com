@@ -417,11 +417,12 @@ for small screen(<720px):
 }
 
 #cover p {
-    opacity: 0;
     font-size: 14px;
     line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
 }
-
+.main_cover {
+    opacity: 0;
+}
 #cover h1 + p {
     padding-top: 14px; /* 14px = 30 - 16(above line-spacing) */
 }
