@@ -6,7 +6,7 @@ var cnt = 0;
 
 $(window).load(function() {
   typing();
-}
+});
 function typing(){
   txtTarget.html(txt.substring(0, cnt)+'<span class="type_bar">_</span>');
   cnt++;
