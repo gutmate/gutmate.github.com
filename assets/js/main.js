@@ -14,6 +14,4 @@ $(document).ready(function(){
           cnt = 0;
       }
   }
-
-  typing();
 });
