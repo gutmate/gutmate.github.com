@@ -20,7 +20,7 @@ layout: default
 </div>
 
 <script>
-  $(document).ready(function(){
+  window.onload = function() {
     var txtTarget = $('#cover p');
     var txt = txtTarget.html();
     var leng = txt.length;
@@ -38,5 +38,6 @@ layout: default
     }
 
     typing();
-  });
+  }
+
 </script>
