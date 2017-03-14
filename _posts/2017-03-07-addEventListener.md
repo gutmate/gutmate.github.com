@@ -16,9 +16,9 @@ tags:
 /** addEventListener
  *
  * IE9+, chrome
- * @pram type {string} //이벤트 타입을 구분하기 위한 문자열 (ex click, blur, drag, drop, ...)
- * @pram function {obj} //이벤트를 수신하여 처리할 객체, 해당 객체는 EventListener 인테페이스를 구현하거나 단순한 자바스크립트 함수여야 한다.
- * @pram useCapture {boolean} //true = Capturing, false = Bubling, default = false
+ * @param type {string} //이벤트 타입을 구분하기 위한 문자열 (ex click, blur, drag, drop, ...)
+ * @param function {obj} //이벤트를 수신하여 처리할 객체, 해당 객체는 EventListener 인테페이스를 구현하거나 단순한 자바스크립트 함수여야 한다.
+ * @param useCapture {boolean} //true = Capturing, false = Bubling, default = false
  */
 element.addEventListener(type, function[, useCapture]);
 
