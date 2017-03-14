@@ -63,6 +63,8 @@
 				//console.log('v-Top: ' + viewportTop + ', v-Bottom: ' + viewportBottom + ', f-Top: ' + footerTop);
         });
 
+        
+
         // show/hide cover videos by browser
         var coverVideos = $('#cover video');
         if (/Mobi/.test(window.navigator.userAgent)) {
