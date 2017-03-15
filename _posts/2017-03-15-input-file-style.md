@@ -10,9 +10,11 @@ tags:
 ---
 
 ```html
-<input class="upload-name" value="파일선택" disabled="disabled">
-<label for="ex_filename">업로드</label>
-<input type="file" id="ex_filename" class="upload-hidden">
+<div class="filebox">
+  <input class="upload-name" value="파일선택" disabled="disabled">
+  <label for="ex_filename">업로드</label>
+  <input type="file" id="ex_filename" class="upload-hidden">
+</div>
 ```
 
 ```css
