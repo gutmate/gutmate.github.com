@@ -285,7 +285,7 @@ for small screen(<720px):
    position: relative;
     padding-bottom: 100px;
     background-color: #f4f4f4;
-    overflow-x: scroll; /* @@iolo for very long title/tags */
+    /* overflow-x: scroll; */ /* @@iolo for very long title/tags */
 }
 
 #content {
