@@ -1146,6 +1146,12 @@ body.about-template .about-img {
 }
 
 /* code */
+#content code.highlighter-rouge {
+	background-color: #222;
+	color: #fff;
+	padding: 3px 4px;
+	border-radius: 4px;
+}
 #content .highlighter-rouge {
   position: relative;
 }
@@ -1176,7 +1182,7 @@ body.about-template .about-img {
   background: #f1672c;
   color: white;
   content: "HTML";
-}
+}	
 #content .highlighter-rouge.language-css:before {
   background: #30a9dc;
   color: white;
