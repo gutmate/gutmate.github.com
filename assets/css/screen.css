@@ -898,6 +898,7 @@ body.tag-template #navbar {
     font-size: 1em;
     white-space: pre;
     overflow: auto;
+	-webkit-overflow-scrolling:touch;
     /* border-radius: 3px */
 }
 
