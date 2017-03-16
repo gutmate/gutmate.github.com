@@ -1147,9 +1147,10 @@ body.about-template .about-img {
 
 /* code */
 #content code.highlighter-rouge {
-	background-color: #222;
+	margin: 0 4px;
+	padding: 5px 4px;
 	color: #fff;
-	padding: 3px 4px;
+	background-color: #222;
 	border-radius: 4px;
 }
 #content .highlighter-rouge {
