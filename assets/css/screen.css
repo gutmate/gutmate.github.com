@@ -27,8 +27,11 @@ pre,
 code,
 tt,
 kbd {
-    font-family: 'NanumCoding',monospace;
+    font-family: "Source Code Pro", "Noto Sans KR", monospace;
     font-weight: 300;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 kbd {
   display: inline-block;
@@ -1167,7 +1170,7 @@ body.about-template .about-img {
 }
 #content .highlighter-rouge:before {
   display: inline-block;
-  font-family: NanumCoding, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Noto Sans KR", "Roboto", "Open Sans", Arial, sans-serif;
   font-size: 0.6rem;
   font-weight: 700;
   height: 1rem;
@@ -1184,7 +1187,7 @@ body.about-template .about-img {
   background: #f1672c;
   color: white;
   content: "HTML";
-}	
+}
 #content .highlighter-rouge.language-css:before {
   background: #30a9dc;
   color: white;
