@@ -213,6 +213,7 @@ for small screen(<720px):
 #logo .txt {
     display: table-cell;
     vertical-align: middle;
+    font-family: 'Baloo Tamma', cursive;
     font-weight: 400;
     font-size: 26px;
     color: #1e1e1e;
