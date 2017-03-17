@@ -319,7 +319,7 @@ for small screen(<720px):
 
 #footer {
     height: 100px;
-    padding: 20px 30px;
+    padding: 20px;
     border-top: 1px solid #d4d4d4;
     background: #fff;
     color: #505050;
@@ -1171,12 +1171,12 @@ body.about-template .about-img {
 #content .highlighter-rouge:before {
   display: inline-block;
   font-family: "Source Sans Pro", "Noto Sans KR", "Roboto", "Open Sans", Arial, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  height: 1rem;
+  font-size: 10px;
+  font-weight: 400;
+  height: 16px;
   left: -2px;
   letter-spacing: 0.1em;
-  line-height: 1rem;
+  line-height: 16px;
   padding: 0 0.5em;
   position: absolute;
   text-transform: uppercase;
@@ -1243,7 +1243,7 @@ body.about-template .about-img {
   color: white;
   content: "typescript";
 }
-#content .highlighter-rouge.language-typescript code .err {
+#content .highlighter-rouge.language-typescript © .err {
   background-color: transparent;
 }
 
