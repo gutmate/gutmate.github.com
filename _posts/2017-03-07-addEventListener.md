@@ -8,7 +8,7 @@ tags:
 ---
 
 # addEventListener, attachEvent
-asdfasdfas
+
 두 메소드의 기능은 같지만 브라우저마다 **지원**하는 `메소드`가
 다르기 때문에 분기 처리 해주어야 한다.
 
