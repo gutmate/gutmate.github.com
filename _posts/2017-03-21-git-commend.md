@@ -7,7 +7,9 @@ tags:
   - git
 ---
 
-```bash
-$ git remote set-url origin https://333.333.333.333/repogitory.git
-변경완료
-```
+---
+comment: 'git 저장소 url 변경'
+
+aa: '```git remote set-url origin https://333.333.333.333/repogitory.git```'
+
+---
