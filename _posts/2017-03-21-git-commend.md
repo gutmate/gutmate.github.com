@@ -7,9 +7,10 @@ tags:
   - git
 ---
 
----
-comment: 'git 저장소 url 변경'
+## git 명령어
 
-aa: '```git remote set-url origin https://333.333.333.333/repogitory.git```'
-
----
+|  | commend |
+|-----------------|:-------------------------------------------------------------------:|
+| 저장소 url 변경 |  `git remote set-url origin https://333.333.333.333/repogitory.git` |
+| 사용자 이름 변경 |  `git config --global user.name {user.name}` |
+| 사용자 이메일 변경 |  `git config --global user.email {user.email}` |
