@@ -18,12 +18,12 @@ $ rm -rf .git
 ```bash
 $ git init
 $ git add .
-$ git commit -m '{{commit message}}}'
+$ git commit -m 'first commit'
 ```
 
 3. git 저장소 연결 후 강제 push
 
 ```bash
-$ git remote add origin {{git remote url}}
+$ git remote add origin {git remote url}
 $ git push -u --force origin master
 ```
