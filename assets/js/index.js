@@ -60,10 +60,10 @@
                 // already top: hide
                 $('#back-to-top').hide();
             }
-				//console.log('v-Top: ' + viewportTop + ', v-Bottom: ' + viewportBottom + ', f-Top: ' + footerTop);
+            //console.log('v-Top: ' + viewportTop + ', v-Bottom: ' + viewportBottom + ', f-Top: ' + footerTop);
         });
 
-        
+
 
         // show/hide cover videos by browser
         var coverVideos = $('#cover video');

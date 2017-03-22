@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'git 히스토리 삭제하기'
+title: 'git 히스토리 삭제하기(초기화)'
 author: formation.p
 date: '2017-03-22 22:00'
 tags:
