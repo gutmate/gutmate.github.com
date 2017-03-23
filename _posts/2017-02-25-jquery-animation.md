@@ -90,6 +90,8 @@ tags:
 })(window, window.jQuery);
 ```
 
+## How to jQuery image animation
+
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
 ```
