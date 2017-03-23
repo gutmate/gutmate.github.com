@@ -118,3 +118,5 @@ $(document).ready(function(){
 |duration |number   |30     |Animation duration           |
 |repeat   |boolean  |true   |Repeat animation             |
 |delay    |number   |0      |Delay before start anmation  |
+
+> [github - jquery.animationImg](https://github.com/gutmate/animationJS)
