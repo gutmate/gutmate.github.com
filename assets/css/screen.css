@@ -1173,12 +1173,12 @@ body.about-template .about-img {
 #content .highlighter-rouge:before {
   display: inline-block;
   font-family: "Source Sans Pro", "Noto Sans KR", "Roboto", "Open Sans", Arial, sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
-  height: 16px;
-  left: -2px;
+  height: 20px;
+  left: -5px;
   letter-spacing: 0.1em;
-  line-height: 16px;
+  line-height: 20px;
   padding: 0 0.5em;
   position: absolute;
   text-transform: uppercase;
