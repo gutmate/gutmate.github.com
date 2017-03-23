@@ -944,6 +944,7 @@ body.tag-template #navbar {
 }
 
 #post-content th {
+    padding: 5px 10px;
     border: 1px solid #d4d4d4;
     background: #e6e6e6;
     text-align: center;
