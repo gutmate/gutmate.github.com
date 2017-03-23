@@ -17,12 +17,6 @@ tags:
 * (4자리 숫자.png/jpg/gif ([ex] 0000.jpg)는 반환값에 포함되지 않는다.)
 
 ```javascript
-/**
- * @param {number} steps //이미지 컷 수
- * @param {number} duration //애니메이션 전환 속도
- * @param {string} repeat //반복 설정 default: no-repeat
- * @param {number} delay //애니메이션 시작 대기시간
- */
 ;(function($){
 
   $.fn.animationImg = function(settings) {
