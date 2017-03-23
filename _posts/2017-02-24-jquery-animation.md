@@ -111,12 +111,12 @@ $(document).ready(function(){
 
 ## Options
 
-|Option   |Type     |Default|Description                  |
-|---------|---------|-------|-----------------------------|
-|startNum |number   |0      |Start image number           |
-|steps    |number   |10     |Total image length           |
-|duration |number   |30     |Animation duration           |
-|repeat   |boolean  |true   |Repeat animation             |
-|delay    |number   |0      |Delay before start anmation  |
+|Option   |Type     |Default  |Description                  |
+|---------|---------|---------|-----------------------------|
+|startNum |number   |0        |Start image number           |
+|steps    |number   |10       |Total image length           |
+|duration |number   |30       |Animation duration           |
+|repeat   |boolean  |true     |Repeat animation             |
+|delay    |number   |0        |Delay before start anmation  |
 
-> [github - jquery.animationImg](https://github.com/gutmate/animationJS)
+> ### [github - jquery.animationImg](https://github.com/gutmate/animationJS)
