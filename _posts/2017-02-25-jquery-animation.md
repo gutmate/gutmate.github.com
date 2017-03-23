@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'jQuery image animation'
+title: 'jQuery 이미지 애니메이션'
 author: formation.p
-date: '2017-02-24 17:00'
+date: '2017-02-25 17:00'
 tags:
   - javascript
   - jQuery
@@ -10,7 +10,7 @@ tags:
 
 ## javascript source
 
-* 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로하며 파일명 또한 0000~9999까지로 만든다. (네자리 숫자)
+* 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로 하며 파일명 또한 0000~9999까지로 만든다. (네자리 숫자)
 * imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
 * 이미지 확장자는 png/jpg/gif 로 한다.
 * @var rePath; [첫번째 문자] ~ [4자리 숫자.] 전까지의 값을 반환
@@ -77,46 +77,5 @@ tags:
 
 })(jQuery);
 ```
-## How to install
-
-### Step 1: Link required files
-
-```html
-<!-- jQuery library -->
-<script src="jquery-1.11.3.js"></script>
-<!-- animationImg Javascript file -->
-<script src="jquery.animationImg.js"></script>
-```
-
-### Step 2: Create HTML markup
-
-Specify target!
-
-```html
-<img src="../images/animation_0000.png" class="animation_img">
-```
-
-### Step 3: Call the animationImg
-
-Call `.animationImg()` on `<img class="animation_img">`. Note that the call must be made inside of a `$(document).ready()` call, or the plugin will not work!
-
-```javascript
-$(document).ready(function(){
-  $('.animation_img').animationImg({
-    steps: 45,
-    repeat: false
-  });
-});
-```
-
-## Options
-
-|Option   |Type     |Default  |Description                  |
-|---------|---------|---------|-----------------------------|
-|start    |number   |0        |Start image number           |
-|steps    |number   |10       |Total image length           |
-|duration |number   |30       |Animation duration           |
-|repeat   |boolean  |true     |Repeat animation             |
-|delay    |number   |0        |Delay before start anmation  |
 
 > ### [github - jquery.animationImg](https://github.com/gutmate/animationJS)
