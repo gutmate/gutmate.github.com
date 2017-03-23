@@ -1153,11 +1153,12 @@ body.about-template .about-img {
 
 /* code */
 #content code.highlighter-rouge {
-	margin: 0 4px;
-	padding: 5px 4px;
+	margin: 0 5px;
+	padding: 2px;
 	color: #fff;
 	background-color: #222;
 	border-radius: 4px;
+  list-style: 1;
 }
 #content .highlighter-rouge {
   position: relative;
