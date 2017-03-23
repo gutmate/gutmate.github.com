@@ -90,7 +90,7 @@ tags:
 
 ### Step 2: Create HTML markup
 
-Setting class name!
+Specify target!
 
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
@@ -113,7 +113,7 @@ $(document).ready(function(){
 
 |Option   |Type     |Default  |Description                  |
 |---------|---------|---------|-----------------------------|
-|startNum |number   |0        |Start image number           |
+|start    |number   |0        |Start image number           |
 |steps    |number   |10       |Total image length           |
 |duration |number   |30       |Animation duration           |
 |repeat   |boolean  |true     |Repeat animation             |
