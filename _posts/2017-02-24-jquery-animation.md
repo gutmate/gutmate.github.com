@@ -6,11 +6,9 @@ date: '2017-02-24 17:00'
 tags:
   - javascript
   - jQuery
-  - prototype
-  - animation
 ---
 
-## plugin
+## javascript source
 
 * 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로하며 파일명 또한 0000~9999까지로 만든다. (네자리 숫자)
 * imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
@@ -85,21 +83,44 @@ tags:
 
 })(jQuery);
 ```
+## How to install
 
-## 실행
+### Step 1: Link required files
+
+```html
+<!-- jQuery library -->
+<script src="jquery-1.11.3.js"></script>
+<!-- animationImg Javascript file -->
+<script src="jquery.animationImg-1.0.js"></script>
+```
+
+### Step 2: Create HTML markup
+
+Setting class name!
 
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
 ```
 
+### Step 3: Call the animationImg
+
+Call `.animationImg()` on `<img class="animation_img">`. Note that the call must be made inside of a `$(document).ready()` call, or the plugin will not work!
+
 ```javascript
 $(document).ready(function(){
   $('.animation_img').animationImg({
-    startNum: 0,    //{number}    시작 이미지
-    steps: 10,      //{number}    이미지 총 개수
-    duration: 30,   //{number}    애니메이션 실행 속도
-    repeat: true,   //{boolean}   반복 유무
-    delay: 0        //{number}    애니메이션 시작하기 전 딜레이
+    steps: 45,
+    repeat: false
   });
 });
 ```
+
+## Options
+
+|Option   |Type     |Default|Description                  |
+|---------|---------|-------|-----------------------------|
+|startNum |number   |0      |Start image number           |
+|steps    |number   |10     |Total image length           |
+|duration |number   |30     |Animation duration           |
+|repeat   |boolean  |true   |Repeat animation             |
+|delay    |number   |0      |Delay before start anmation  |
