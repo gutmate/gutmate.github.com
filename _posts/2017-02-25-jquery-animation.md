@@ -11,7 +11,7 @@ tags:
 # jQuery image animation
 
 * 이미지 src값의 증가하는 숫자의 범위는 0000~9999 까지로 하며 파일명 또한 0000~9999까지로 만든다. (네자리 숫자)
-* imgname0000.jpg  imgname-0001.gif  imgname_0002.png...
+* imgname0000.jpg | imgname-0001.gif | imgname_0002.png...
 * 이미지 확장자는 png/jpg/gif 로 한다.
 * @var rePath; [첫번째 문자] ~ [4자리 숫자.] 전까지의 값을 반환
 * (4자리 숫자.png/jpg/gif ([ex] 0000.jpg)는 반환값에 포함되지 않는다.)
@@ -76,7 +76,7 @@ tags:
 
     //체이닝 설정
     return this;
-    
+
   };
 
 })(jQuery);
