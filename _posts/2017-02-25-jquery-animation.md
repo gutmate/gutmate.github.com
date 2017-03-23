@@ -38,7 +38,7 @@ tags:
       duration: 30,
       repeat: true,
       delay: 0
-    }, settings );
+    }, settings);
 
     for(i=option.start; i<option.steps+1; i++) {
       if (i < 10) {
@@ -73,6 +73,10 @@ tags:
     } else {
       return false;
     }
+
+    //체이닝 설정
+    return this;
+    
   };
 
 })(jQuery);
