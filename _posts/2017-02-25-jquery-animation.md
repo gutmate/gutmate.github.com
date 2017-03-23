@@ -92,9 +92,13 @@ tags:
 
 ## How to jQuery image animation
 
+Specify target.
+
 ```html
 <img src="../images/animation_0000.png" class="animation_img">
 ```
+
+Call `.animationImg()`
 
 ```javascript
 $(document).ready(function(){
