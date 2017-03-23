@@ -898,11 +898,11 @@ body.tag-template #navbar {
     /* background: #f4f4f4; */
     /* border: 1px solid #d4d4d4; */
     width: 100%;
-    padding: 30px;
+    padding: 35px 30px 30px;
     font-size: 1em;
     white-space: pre;
     overflow: auto;
-	-webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling:touch;
     /* border-radius: 3px */
 }
 
