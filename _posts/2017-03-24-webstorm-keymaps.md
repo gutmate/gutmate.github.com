@@ -24,7 +24,7 @@ image: /files/covers/webstorm-icon.jpg
 |프로젝트 검색(All)|<kbd>Shift</kbd>, <kbd>Shift</kbd>|
 |클립보드 선택 붙여넣기|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd>|
 |행 이동|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> & <kbd>↓</kbd>|
-|Refactor This...|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd>, <kbd>t</kbd>|
+|Refactor This...|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>t</kbd>|
 |Git add|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>a</kbd>|
 |Git commit|<kbd>Ctrl</kbd> + <kbd>k</kbd>|
 |Git push|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd>|
