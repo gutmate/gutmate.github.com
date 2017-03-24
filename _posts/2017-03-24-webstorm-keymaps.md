@@ -14,6 +14,7 @@ image: /files/covers/webstorm-icon.jpg
 
 |설명|Keymaps|
 |---|---|
+|설정창 열기|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>s</kbd>|
 |동일 변수 선택|<kbd>Alt</kbd> + <kbd>j</kbd>|
 |일괄 선택|<kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd>|
 |한줄 복사|<kbd>Ctrl</kbd> + <kbd>d</kbd>|
