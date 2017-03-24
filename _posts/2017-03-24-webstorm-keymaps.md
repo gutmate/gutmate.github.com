@@ -12,7 +12,7 @@ image: /files/covers/webstorm-icon.jpg
 
 ## WebStorm Keymaps
 
-|설명|Keymaps|
+|Option|Keymaps|
 |---|---|
 |설정창 열기|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>s</kbd>|
 |동일 변수 선택|<kbd>Alt</kbd> + <kbd>j</kbd>|
@@ -28,4 +28,3 @@ image: /files/covers/webstorm-icon.jpg
 |Git add|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>a</kbd>|
 |Git commit|<kbd>Ctrl</kbd> + <kbd>k</kbd>|
 |Git push|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd>|
-
