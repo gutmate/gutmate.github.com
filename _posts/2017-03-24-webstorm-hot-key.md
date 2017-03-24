@@ -7,11 +7,12 @@ tags:
   - IDE
   - webstrom
   - jetbrains
-image: /files/covers/webstorm.png
+image: /files/covers/webstorm-icon.jpg
 ---
 
 ## WebStorm Hot-Key
 
 |                          | commend                             |
 |--------------------------|-------------------------------------|
-|동일 변수 선택              |<kbd>alt</kbd> + <kbd>j</kbd>        |
+|동일 변수 선택              |<kbd>Alt</kbd> + <kbd>j</kbd>        |
+|동일 변수 선택              |<kbd>Alt</kbd> + <kbd>j</kbd>        |
