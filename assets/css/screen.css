@@ -939,6 +939,7 @@ body.tag-template #navbar {
 
 /* @@iolo */
 #post-content table {
+    width: 100%;
     margin: 1em 0;
     border: 3px solid #d4d4d4;
 }
@@ -1158,7 +1159,7 @@ body.about-template .about-img {
 	color: #fff;
 	background-color: #222;
 	border-radius: 4px;
-  list-style: 1;
+    line-height: 1;
 }
 #content .highlighter-rouge {
   position: relative;
