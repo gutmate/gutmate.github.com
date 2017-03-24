@@ -45,10 +45,10 @@
 
         $(window).scroll(function () {
             var viewportTop = $(window).scrollTop();
-				var footerTop = $('#footer').offset().top;
-				var viewportBottom = viewportTop + $(window).height();
+            var footerTop = $('#footer').offset().top;
+            var viewportBottom = viewportTop + $(window).height();
 
-				if (viewportTop) {
+            if (viewportTop) {
                 if ((footerTop <= viewportBottom) && (footerTop >= viewportTop)) {
                     // footer is visible: static above footer
                     $('#back-to-top').addClass('static').show();
