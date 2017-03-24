@@ -7,7 +7,7 @@ tags:
   - IDE
   - webstrom
   - jetbrains
-image: /files/covers/webstrom.png
+image: /files/covers/webstorm.png
 ---
 
 ## WebStorm Hot-Key
