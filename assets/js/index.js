@@ -25,23 +25,23 @@
             }
         });
 
-        $('#search-toggle').click(function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-            if ($('#search').is(':visible')) {
-                $('#search').hide();
-            } else {
-                $('#menu').hide();
-                $('#search').show();
-            }
-        });
-
-        $('#search').submit(function (e) {
-            e.preventDefault();
-            var q = $('#searchQueryEdit').val();
-            var url = 'http://search.daum.net/search?q=' + encodeURIComponent(q);
-            window.open(url, '', '_blank');
-        });
+        // $('#search-toggle').click(function (e) {
+        //     e.stopPropagation();
+        //     e.preventDefault();
+        //     if ($('#search').is(':visible')) {
+        //         $('#search').hide();
+        //     } else {
+        //         $('#menu').hide();
+        //         $('#search').show();
+        //     }
+        // });
+        //
+        // $('#search').submit(function (e) {
+        //     e.preventDefault();
+        //     var q = $('#searchQueryEdit').val();
+        //     var url = 'http://search.daum.net/search?q=' + encodeURIComponent(q);
+        //     window.open(url, '', '_blank');
+        // });
 
         $(window).scroll(function () {
             var viewportTop = $(window).scrollTop();
