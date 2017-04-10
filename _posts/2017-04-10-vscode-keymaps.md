@@ -13,7 +13,7 @@ image: /files/covers/vscode-icon.jpg
 
 |Option|Keymaps|
 |---|---|
-|Multi-Cursor Editing|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> & <kbd>←</kbd> & kbd>↑</kbd> & kbd>↓</kbd>|
+|Multi-Cursor Editing|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> & <kbd>←</kbd> & <kbd>↑</kbd> & kbd>↓</kbd>|
 |IntelliSense|<kbd>Ctrl</kbd> + <kbd>Space</kbd>|
 |Rename Refactoring|<kbd>Ctrl</kbd> + <kbd>Space</kbd>|
 |Formatting|<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>|
