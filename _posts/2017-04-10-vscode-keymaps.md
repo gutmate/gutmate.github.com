@@ -11,15 +11,11 @@ image: /files/covers/vscode-icon.jpg
 
 ## Visual Studio Code Keymaps
 
-<kbd>Ctrl</kbd>
-<kbd>Alt</kbd>
-<kbd>Shift</kbd>
-<kbd>→</kbd>
-<kbd>←</kbd>
-<kbd>↑</kbd>
-<kbd>↓</kbd>
-
 |Option|Keymaps|
 |---|---|
-|Multi-Cursor Editing|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd>|
-|Rename Refactoring|<kbd>F2</kbd>|
+|Multi-Cursor Editing|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>→</kbd> & <kbd>←</kbd> & kbd>↑</kbd> & kbd>↓</kbd>|
+|IntelliSense|<kbd>Ctrl</kbd> + <kbd>Space</kbd>|
+|Rename Refactoring|<kbd>Ctrl</kbd> + <kbd>Space</kbd>|
+|Formatting|<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>|
+|Code Folding|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>[</kbd> & <kbd>]</kbd>|
+|Errors and Warnings|<kbd>Ctrl</kbd> + <kbd>K</kbd> , <kbd>N</kbd>|
