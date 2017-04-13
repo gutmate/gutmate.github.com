@@ -124,7 +124,7 @@ image: /files/covers/tomcat-icon.jpg
 * 서버를 더 추가 하고 싶다면 `<Service name="Catalina">` 부분을 계속 추가한다.
 
 
-## 2. 도메인으로 연결하기
+## 2. 도메인으로 연결
 
 ### example
 
