@@ -11,11 +11,11 @@ image: /files/covers/vscode-icon.jpg
 
 # Tomcat 다중 서버 실행하기
 
-## localhost:xxxx (port 구분으로 연결)
+## 1. localhost:xxxx (port 구분으로 연결)
 
 ### example
 
-`tomcat/conf/server.xml` 파일
+#### `tomcat/conf/server.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -51,7 +51,7 @@ image: /files/covers/vscode-icon.jpg
 
         <Host name="localhost"  appBase="c:/work/aaa/"
             unpackWARs="true" autoDeploy="true">
-            <!--<Context path="" docBase="AgroTrade/" reloadable="true"/>-->
+            <!--<Context path="" docBase="aaa/" reloadable="true"/>-->
         </Host>
 
     </Engine>
@@ -59,7 +59,7 @@ image: /files/covers/vscode-icon.jpg
   <!-- [end]: 서비스 1 -->
 
   <!-- 서비스 2 // http://localhost:6050/ -->
-  <Service name="Catalina"> <!-- aT-BMS -->
+  <Service name="Catalina">
     <Connector port="6050" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="6443" />
@@ -81,7 +81,7 @@ image: /files/covers/vscode-icon.jpg
   <!-- [end]: 서비스 2 -->
 
   <!-- 서비스 3 // http://localhost:4050/ -->
-  <Service name="Catalina"> <!-- koreaports -->
+  <Service name="Catalina">
     <Connector port="4050" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="4443" />
@@ -111,14 +111,12 @@ image: /files/covers/vscode-icon.jpg
 * `<Host appBase="{path}">` 에 해당 서버의 폴더경로를 설정한다. `<Context>` 를 사용할 경우 `<Context codBase="{path}">` 에 해당 서버의 폴더경로를 설정한다.
 (`<Context>` 를 지정하지 않을 경우 default 값으로 ROOT가 지정이 되어 하위에 ROOT폴더가 필요한 것으로 보인다.)
 
-* 위의 서비스1 부분 처럼 `<Context />` 부분을 만들지 않고 `<Host>` 에서 바로 경로를 설정 했다면 ROOT 폴더가 있어야 가능하다.
-
+* 위의 서비스1 부분 처럼 `<Context />` 부분을 만들지 않고 `<Host>` 에서 바로 경로를 설정 했다면 ROOT 폴더가 있어야 가능하다. <br /><br />
 `/work/aaa/ROOT/index.html` <br />
 `/work/bbb/index.html` <br />
 `/work/ccc/index.html` <br />
 
-* 위와 같이 설정 했을 경우에는 아래처럽 접속 하면 된다.
-
+* 위와 같이 설정 했을 경우에는 아래처럽 접속 하면 된다. <br /><br />
 `http://localhost:4050/` <br />
 `http://localhost:5050/` <br />
 `http://localhost:6050/` <br />
@@ -126,7 +124,7 @@ image: /files/covers/vscode-icon.jpg
 * 서버를 더 추가 하고 싶다면 `<Service name="Catalina">` 부분을 계속 추가한다.
 
 
-## 도메인으로 연결하기
+## 2. 도메인으로 연결하기
 
 ### example
 
@@ -189,14 +187,12 @@ image: /files/covers/vscode-icon.jpg
 
 * `<Service><Connector port="80">` 의 port를 80으로 설정한다.
 
-* 위의 서비스1 부분 처럼 `<Context />` 부분을 만들지 않고 `<Host>` 에서 바로 경로를 설정 했다면 ROOT 폴더가 있어야 가능하다.
-
+* 위의 서비스1 부분 처럼 `<Context />` 부분을 만들지 않고 `<Host>` 에서 바로 경로를 설정 했다면 ROOT 폴더가 있어야 가능하다. <br /><br />
 `/work/aaa/ROOT/index.html` <br />
 `/work/bbb/index.html` <br />
-`/work/ccc/index.html` <br />
+`/work/ccc/index.html`
 
-* 위와 같이 설정 했을 경우에는 아래처럽 접속 하면 된다.
-
+* 위와 같이 설정 했을 경우에는 아래처럽 접속 하면 된다. <br /><br />
 `http://www.aaa.com/` <br />
 `http://www.bbb.com/` <br />
 `http://www.ccc.com/` <br />
