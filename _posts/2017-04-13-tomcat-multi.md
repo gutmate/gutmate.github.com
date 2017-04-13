@@ -6,7 +6,7 @@ date: '2017-04-13 10:00'
 tags:
   - Tomcat
   - server
-image: /files/covers/vscode-icon.jpg
+image: /files/covers/tomcat-icon.jpg
 ---
 
 # Tomcat 다중 서버 실행하기
