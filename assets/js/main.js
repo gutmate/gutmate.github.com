@@ -29,12 +29,12 @@ $(document).ready(function () {
         //     "Node.js.", "Express.", "Socket.io.", "MongoDB."
         // ],
         strings: [
-            "HTML5.", "CSS3.", "Sass.", "JavaScript.", "jQuery.", "Node.js.", "Git"
+            "HTML5.", "CSS3.", "Sass.", "JavaScript.", "jQuery.", "Node.js.", "Git."
         ],
         typeSpeed: 120,
         startDelay: 0,
         backSpeed: 80,
-        backDelay: 800,
+        backDelay: 1600,
         loop: true
     });
 });
