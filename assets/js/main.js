@@ -22,11 +22,14 @@
 // }
 
 // TYPED.JS
-$(document).ready(function(){
+$(document).ready(function () {
     $("#typed").typed({
+        // strings: [
+        //     "HTML5.", "CSS3.", "Sass.", "Bootstrap.", "JavaScript.", "jQuery.",
+        //     "Node.js.", "Express.", "Socket.io.", "MongoDB."
+        // ],
         strings: [
-            "HTML5.", "CSS3.", "Sass.", "Bootstrap.", "JavaScript.", "jQuery.",
-            "Node.js.", "Express.", "Socket.io.", "MongoDB."
+            "HTML5.", "CSS3.", "Sass.", "JavaScript.", "jQuery.", "Node.js.", "Git"
         ],
         typeSpeed: 120,
         startDelay: 0,
