@@ -425,9 +425,9 @@ for small screen(<720px):
     font-size: 14px;
     line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
 }
-.main_cover {
+/* .main_cover {
     opacity: 0;
-}
+} */
 #cover h1 + p {
     padding-top: 14px; /* 14px = 30 - 16(above line-spacing) */
 }
@@ -763,7 +763,7 @@ body.page-template #cover p {
 body.home-template #cover h1 + p,
 body.archive-template #cover h1 + p,
 body.page-template #cover h1 + p {
-    padding-top: 26px;
+    padding-top: 16px;
 }
 
 /* @@iolo */
@@ -1912,4 +1912,46 @@ body.about-template .about-img {
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
     }
+}
+
+/* 메인 타이핑 효과 */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
