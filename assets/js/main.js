@@ -31,9 +31,9 @@ $(document).ready(function () {
         strings: [
             "HTML5.", "CSS3.", "Sass.", "JavaScript.", "jQuery.", "Node.js.", "Git."
         ],
-        typeSpeed: 120,
+        typeSpeed: 110,
         startDelay: 0,
-        backSpeed: 80,
+        backSpeed: 60,
         backDelay: 1600,
         loop: true
     });

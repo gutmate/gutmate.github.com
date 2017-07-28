@@ -757,13 +757,13 @@ body.tag-template #cover {
 body.home-template #cover p,
 body.archive-template #cover p,
 body.page-template #cover p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body.home-template #cover h1 + p,
 body.archive-template #cover h1 + p,
 body.page-template #cover h1 + p {
-    padding-top: 16px;
+    padding-top: 6px;
 }
 
 /* @@iolo */
