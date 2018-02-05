@@ -10,7 +10,11 @@ tags:
 
 # 엑셀로 테이블 만들기
 
-## 예제
+## excel2json 활용
+
+## json to table (ajax)
+
+### ajax 예제
 ```javascript
 $.ajax({
     type: 'GET',
