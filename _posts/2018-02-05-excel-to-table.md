@@ -1,0 +1,45 @@
+---
+layout: post
+title: '엑셀로 테이블 만들기'
+author: formation.p
+date: '2018-02-05 16:00'
+tags:
+  - javascript
+  - excel
+---
+
+# 엑셀로 테이블 만들기
+
+## 예제
+```javascript
+$.ajax({
+    type: 'GET',
+    url: 'table.json',
+    dataType: 'json',
+    cache: false,
+    success: function (data) {
+        var tableData = data.a0; //a0 = 임의의 카테고리 이름
+        var _table = [];
+
+        for (var i = 0; i < tableData.length; i++) {
+            _table.push('<tr>');
+            _table.push('    <th scope="row">'+ tableData[i].year +'</th>');
+            _table.push('    <td>'+ tableData[i].position +'</td>');
+            _table.push('</tr>');
+        }
+
+        _tableHtml = _table.join('\n');
+
+        $('div').append(_tableHtml);
+    },
+    error: function (info, xhr) {
+        if (info.readyState == '4') {
+            console.log('문제가 발생했습니다.\n상태코드 : ' + info.status + '\n\n' + info.responseText);
+        } else {
+            console.log('문제가 발생했습니다.\n잠시후 다시 시도해 주세요.\n 상태코드 : ' + info.status);
+        }
+    },
+    timeout: 3000
+});
+```
+
