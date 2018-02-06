@@ -33,7 +33,7 @@ $(document).ready(function () {
         ],
         typeSpeed: 110,
         startDelay: 0,
-        backSpeed: 150,
+        backSpeed: 60,
         backDelay: 1600,
         loop: true
     });
