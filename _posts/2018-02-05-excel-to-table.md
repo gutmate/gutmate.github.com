@@ -10,7 +10,7 @@ tags:
 
 # 엑셀로 테이블 만들기
 
-## 1. excel2json 활용
+## 1. excel2json 활용 ([link](https://github.com/coolengineer/excel2json))
 
 ## 2. json to table (ajax)
 
@@ -46,4 +46,3 @@ $.ajax({
     timeout: 3000
 });
 ```
-
