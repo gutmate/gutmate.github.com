@@ -10,11 +10,12 @@ tags:
 
 # 엑셀로 테이블 만들기
 
-## 1. excel2json 활용 ([link](https://github.com/coolengineer/excel2json))
+## 1. excel2json 활용
+[link](https://github.com/coolengineer/excel2json)
 
 ## 2. json to table (ajax)
+json 파일을 테이블로 생성하기 위해서 ajax를 이용
 
-### ajax 예제
 ```javascript
 $.ajax({
     type: 'GET',
