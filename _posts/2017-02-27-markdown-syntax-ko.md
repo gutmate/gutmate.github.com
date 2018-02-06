@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '마크다운 markdown 작성법'
-author: formation.p
+author: jinnnh
 date: '2017-02-27 11:43'
 tags:
   - markdown

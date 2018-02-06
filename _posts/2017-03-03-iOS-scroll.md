@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'iOS position fixed focus event issue'
-author: formation.p
+author: jinnnh
 date: '2017-03-03 18:00'
 tags:
   - javascript

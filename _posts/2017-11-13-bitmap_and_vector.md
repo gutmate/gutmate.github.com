@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '비트맵과 벡터의 차이점'
-author: formation.p
+author: jinnnh
 date: '2017-11-13 14:30'
 tags:
   - bitmap

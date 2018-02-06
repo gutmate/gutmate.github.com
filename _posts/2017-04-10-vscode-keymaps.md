@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'VS Code 단축키'
-author: formation.p
+author: jinnnh
 date: '2017-04-10 17:00'
 tags:
   - EDITOR

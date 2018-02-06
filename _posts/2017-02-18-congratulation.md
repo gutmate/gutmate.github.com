@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  '업데이트!!'
-author: formation.p
+author: jinnnh
 date: 2017-02-19 15:00
 tags: [congratulation,notice]
 disqus: true

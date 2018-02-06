@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '자주쓰는 git 명령어'
-author: formation.p
+author: jinnnh
 date: '2017-03-21 16:00'
 tags:
   - git

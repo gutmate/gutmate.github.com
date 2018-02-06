@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Markdown code tag color'
-author: formation.p
+author: jinnnh
 date: '2017-03-11 17:25'
 tags:
   - markdown

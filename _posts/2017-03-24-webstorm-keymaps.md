@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '웹스톰 단축키'
-author: formation.p
+author: jinnnh
 date: '2017-03-24 20:00'
 tags:
   - IDE

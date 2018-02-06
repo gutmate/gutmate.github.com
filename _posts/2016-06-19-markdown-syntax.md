@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Markdown Syntax'
-author: formation.p
+author: jinnnh
 date: 2016-06-19 15:00
 tags: [markdonw,syntax,sample,test,jekyll]
 image: /files/covers/solid-state-logic.jpg

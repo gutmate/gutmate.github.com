@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'addEventListener, attachEvent'
-author: formation.p
+author: jinnnh
 date: '2017-03-07 10:40'
 tags:
   - javascript

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '엑셀로 테이블 만들기'
-author: formation.p
+author: jinnnh
 date: '2018-02-05 16:00'
 tags:
   - javascript

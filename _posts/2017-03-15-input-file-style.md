@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'input file 디자인 입히기'
-author: formation.p
+author: jinnnh
 date: '2017-03-15 10:30'
 tags:
   - javascript

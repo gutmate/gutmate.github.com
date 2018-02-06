@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '엘리먼트 속성 가져오기'
-author: formation.p
+author: jinnnh
 date: '2017-03-20 16:00'
 tags:
   - javascript

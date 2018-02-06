@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'jQuery 이미지 애니메이션'
-author: formation.p
+author: jinnnh
 date: '2017-02-25 17:00'
 tags:
   - javascript

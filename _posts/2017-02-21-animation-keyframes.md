@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'background-image animation keyframes'
-author: formation.p
+author: jinnnh
 date: '2017-02-21 16:00'
 tags:
   - css

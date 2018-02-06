@@ -1,5 +1,5 @@
 ---
-name: formation.p
+name: jinnnh
 title: 박진형
-image: /files/authors/formation.p.jpg
+image: /files/authors/jinnnh.jpg
 ---

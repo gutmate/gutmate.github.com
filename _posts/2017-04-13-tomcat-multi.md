@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Tomcat 다중 서버 실행'
-author: formation.p
+author: jinnnh
 date: '2017-04-13 10:00'
 tags:
   - Tomcat

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SSH 권한 설정'
-author: formation.p
+author: jinnnh
 date: '2017-07-29 15:40'
 tags:
   - SSH

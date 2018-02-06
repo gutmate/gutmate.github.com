@@ -4,7 +4,7 @@ title: About
 description: How do you think?
 permalink: /about/
 image: /files/covers/blog.jpg
-aboutimg: /files/authors/formation.p.png
+aboutimg: /files/authors/jinnnh.png
 sitemap: yes
 tags:
   - about

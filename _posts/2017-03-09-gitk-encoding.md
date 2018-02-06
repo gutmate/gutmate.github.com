@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'gitk 한글  깨짐 해결방법'
-author: formation.p
+author: jinnnh
 date: '2017-03-09 11:20'
 tags:
   - git

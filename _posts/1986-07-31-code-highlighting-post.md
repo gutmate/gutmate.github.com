@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax Highlighting Post
-author: formation.p
+author: jinnnh
 date: 1986-07-31 04:48
 tags: [sample post,code,highlighting,notice]
 image: /files/covers/solid-state-logic.jpg

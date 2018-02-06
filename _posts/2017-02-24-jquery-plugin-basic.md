@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'jQuery plugin 만들기'
-author: formation.p
+author: jinnnh
 date: '2017-02-24 10:30'
 tags:
   - javascript

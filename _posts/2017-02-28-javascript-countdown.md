@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '자바스크립트 카운트다운'
-author: formation.p
+author: jinnnh
 date: '2017-02-28 10:55'
 tags:
   - javascript

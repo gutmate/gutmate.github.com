@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'github 블로그 시작하기'
-author: formation.p
+author: jinnnh
 date: 2017-02-18 18:00
 tags: [test]
 ---
