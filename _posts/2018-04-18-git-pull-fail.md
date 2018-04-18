@@ -12,14 +12,14 @@ tags:
 
 ### 해결방법
 
-1. 머지 취소
+#### 1. 머지 취소
 ```bash
 git merge --abort
 ```
 
-2. 충돌 해결
+#### 2. 충돌 해결
 
-3. 병합을 추가 하고 커밋
+#### 3. 병합을 추가 하고 커밋
 ```bash
 git status
 git commit -am "커밋 내용"
@@ -29,7 +29,7 @@ git commit -am "커밋 내용"
 > `Pulling is not possible because you have unmerged files`
 
 
-4. 다시 내려 받기
+#### 4. 다시 내려 받기
 ```bash
 git pull
 ```
