@@ -24,7 +24,6 @@ git merge --abort
 git status
 git commit -am "커밋 내용"
 ```
-
 > 커밋을 제대로 하지 않았을 경우 아래 메세지가 뜰 수 있음.<br>
 > `Pulling is not possible because you have unmerged files`
 
