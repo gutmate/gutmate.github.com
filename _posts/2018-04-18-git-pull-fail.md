@@ -7,10 +7,10 @@ tags:
   - git
 ---
 
-### 증상
+## 증상
 `You have not concluded your merge (MERGE_HEAD exists)`
 
-### 해결방법
+## 해결방법
 
 #### 1. 머지 취소
 ```bash
