@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'git pull 실패 해결 (You have not concluded your merge (MERGE_HEAD exists)'
+title: 'git pull 실패 해결 - You have not concluded your merge (MERGE_HEAD exists)'
 author: jinnnh
 date: '2018-04-18 16:00'
 tags:
@@ -13,7 +13,6 @@ tags:
 ### 해결방법
 
 1. 머지 취소
-
 ```bash
 git merge --abort
 ```
@@ -21,7 +20,6 @@ git merge --abort
 2. 충돌 해결
 
 3. 병합을 추가 하고 커밋
-
 ```bash
 git status
 git commit -am "커밋 내용"
@@ -32,7 +30,6 @@ git commit -am "커밋 내용"
 
 
 4. 다시 내려 받기
-
 ```bash
 git pull
 ```
