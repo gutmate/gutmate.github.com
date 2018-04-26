@@ -23,4 +23,4 @@ tags:
 
 ### 이미지 파일명 예
 
-![](/files/dpi_image_exmaple.jpg)
+![](/files/dpi_image_exmaple.jpg "이미지 파일명 예")
