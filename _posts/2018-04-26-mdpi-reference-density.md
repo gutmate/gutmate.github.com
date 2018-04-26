@@ -24,3 +24,17 @@ tags:
 ### 이미지 파일명 예
 
 ![](/files/dpi_image_exmaple.jpg)
+
+```css
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .icon-git {
+    background-image: url(icon_git@2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+  .icon-git {
+    background-image: url(icon_git@3x.png);
+  }
+}
+```
