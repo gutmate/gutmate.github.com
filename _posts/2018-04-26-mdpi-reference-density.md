@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'dpi, 이미지 파일명, 대응 모바일기기'
+title: 'dpi에 따른 이미지 파일명과 대응 모바일기기'
 author: jinnnh
 date: '2018-04-26 14:00'
 tags:
