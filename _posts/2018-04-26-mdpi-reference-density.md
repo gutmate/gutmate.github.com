@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'dpi와 이미지 파일명 설정'
+title: 'dpi, 이미지 파일명, 대응 모바일기기'
 author: jinnnh
 date: '2018-04-26 14:00'
 tags:
@@ -8,7 +8,7 @@ tags:
   - 모바일
 ---
 
-# dpi와 이미지 파일명 설정
+# dpi, 이미지 파일명, 대응 모바일기기
 
 `mdpi` 1px = 1dp
 
