@@ -1273,7 +1273,6 @@ body.about-template .about-img {
     position: relative;
     width: 1000px;
     margin: 20px auto;
-    padding: 70px 40px 100px 40px; /* 40(margin) + 40(padding) = 80 */
     font-size: 16px;
     line-height: 28px; /* 28px = 16(font-size) + 12(line-spacing) */
     text-align: justify;
@@ -1727,7 +1726,6 @@ body.about-template .about-img {
     .adsense-wrap {
         width: auto;
         margin-top: 1em;
-        text-align: left;
     }
 }
 
