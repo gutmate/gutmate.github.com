@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'mdpi 기준 밀도'
+title: 'dpi와 이미지 파일명 설정'
 author: jinnnh
 date: '2018-04-26 14:00'
 tags:
@@ -8,7 +8,7 @@ tags:
   - 모바일
 ---
 
-## mdpi
+# dpi와 이미지 파일명 설정
 
 `mdpi` 1px = 1dp
 
