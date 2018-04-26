@@ -1273,9 +1273,6 @@ body.about-template .about-img {
     position: relative;
     width: 1000px;
     margin: 20px auto;
-    font-size: 16px;
-    line-height: 28px; /* 28px = 16(font-size) + 12(line-spacing) */
-    text-align: justify;
     background-color: #fff;
 }
 
