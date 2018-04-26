@@ -22,38 +22,7 @@ comments: true
 </div>
 
 <div id="content" class="container post" role="main">
-    <div id="post-content">
-        {{ content }}
-
-        <div class="adSense-cont">
-
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- 텍스트, 디스플레이 광고 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-7255412626559199"
-                data-ad-slot="5852348986"
-                data-ad-format="auto"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
-            <!-- 광고 -->
-            <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                style="display:block; text-align:center;"
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-ad-client="ca-pub-7255412626559199"
-                data-ad-slot="9538520543"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script> -->
-            <!-- [end]: 광고 -->
-
-        </div>
-
-    </div>
+    <div id="post-content">{{ content }}</div>
     <div id="post-footer">
         {% assign author = site.authors | where: 'name', page.author | first %}
         <a id="post-author" href="{{ author.url }}">
