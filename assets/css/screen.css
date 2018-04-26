@@ -1271,7 +1271,7 @@ body.about-template .about-img {
 /* 광고 영역 */
 .adsense-wrap {
     position: relative;
-    width: 1000px;
+    width: 1000px !important;
     margin: 20px auto;
     background-color: #fff;
 }
