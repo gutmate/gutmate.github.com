@@ -8,11 +8,12 @@ tags:
   - mysql
 ---
 
+### 명령어
 | 옵션 | 명령어 |
-|-|-|
-| DB 생성 | CREATE DATABASE {name}; |
-| DB 확인 | SHOW DATABASES; |
-| DB 사용 | USE {name}; |
+|-----------|--------------------------|
+| DB 생성    | CREATE DATABASE {name}; |
+| DB 확인    | SHOW DATABASES; |
+| DB 사용    | USE {name}; |
 | TABLE 생성 | CREATE TABLE {topic}; |
 |  |  |
 |  |  |
@@ -25,7 +26,7 @@ tags:
 |  |  |
 |  |  |
 
-### 테이블 생성
+#### 테이블 생성
 
 ```
 CREATE TABLE {tbl}(
@@ -35,6 +36,8 @@ CREATE TABLE {tbl}(
   PRIMARY KEY(c1)
 );
 ```
+
+- 예시
 
 ```
 CREATE TABLE topic1(
