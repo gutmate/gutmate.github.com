@@ -9,8 +9,8 @@ tags:
 ---
 
 ### 명령어
-|옵션|명령어|
-|-----------|--------------------------|
+| 옵션 | 명령어 |
+|-|-|
 | DB 생성    | CREATE DATABASE {name}; |
 | DB 확인    | SHOW DATABASES; |
 | DB 사용    | USE {name}; |
