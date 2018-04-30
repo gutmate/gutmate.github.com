@@ -10,12 +10,13 @@ tags:
 
 ### 명령어
 
-| 옵션 | 명령어 |
-|-----------|--------------------------|
-| DB 생성    | CREATE DATABASE {name}; |
-| DB 확인    | SHOW DATABASES; |
-| DB 사용    | USE {name}; |
-| TABLE 생성 | CREATE TABLE {topic}; |
+|    옵션    |          명령어          |
+|:---------:|-------------------------|
+| DB 생성    | `CREATE DATABASE {name};` |
+| DB 확인    | `SHOW DATABASES;` |
+| DB 사용    | `USE {name};` |
+| TABLE 생성 | `CREATE TABLE {topic};` |
+| TABEL 확인 | `SHOW TABLES;` |
 |  |  |
 
 #### TABEL 생성
