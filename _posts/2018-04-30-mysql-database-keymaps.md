@@ -16,10 +16,10 @@ tags:
 | DB 확인    | `SHOW DATABASES;` |
 | DB 사용    | `USE {name};` |
 | TABLE 생성 | `CREATE TABLE {topic};` |
-| TABEL 확인 | `SHOW TABLES;` |
+| TABLE 확인 | `SHOW TABLES;` |
 |  |  |
 
-#### TABEL 생성
+#### TABLE 생성
 
 ```
 CREATE TABLE {tbl}(
