@@ -9,7 +9,7 @@ tags:
   - keyframes
 ---
 
-# background-image @keyframes 이용해서 animation 구현하기 (gif)
+# background-image로 @keyframes 이용해서 animation 구현하기 (gif)
 
 ## 적용방법
 
