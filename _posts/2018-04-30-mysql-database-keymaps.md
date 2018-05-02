@@ -13,9 +13,10 @@ tags:
 |    옵션    |          명령어          |
 |:---------:|-------------------------|
 | DB 생성    | `CREATE DATABASE {name};` |
+| DB 삭제    | `DROP DATABASE {name};` |
 | DB 확인    | `SHOW DATABASES;` |
 | DB 사용    | `USE {name};` |
-| TABLE 생성 | `CREATE TABLE {topic};` |
+| TABLE 생성 | `CREATE TABLE {name};` |
 | TABLE 확인 | `SHOW TABLES;` |
 |  |  |
 
