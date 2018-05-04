@@ -36,7 +36,20 @@
     <link href="../assets/css/html.css" rel="stylesheet" type="text/css">
 
     <script src="../assets/lib/jquery-1.12.0.min.js"></script>
-    <script src="../assets/js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-toggle').click(function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                if ($('#menu').is(':visible')) {
+                    $('#menu').hide();
+                } else {
+                    $('#search').hide();
+                    $('#menu').show();
+                }
+            });
+        });
+    </script>
 </head>
 <body class="html">
     <div id="header">
@@ -61,6 +74,7 @@
                     <caption class="hide_caption">창업비용 안내</caption>
                     <colgroup>
                         <col>
+                        <col style="text-align: left;">
                     </colgroup>
                     <thead>
                         <tr>
@@ -68,20 +82,18 @@
                             <th scope="col" colspan="2">휘발유 가격(리터)</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th scope="col">주유량</th>
-                            <td colspan="2">L <input type="text" id="oil_amount" style="width:60px"></td>
-                        </tr>
-                    </tfoot>
                     <tbody>
                         <tr>
-                            <td>해뜨는 주유소</td>
-                            <td colspan="2">\ <input type="text" id="currentPrice1" style="width:60px"></td>
+                            <th scope="row">해뜨는 주유소</th>
+                            <td colspan="2"><input type="text" id="currentPrice1" style="width:60px"> 원</td>
                         </tr>
                         <tr>
-                            <td>비교 주유소</td>
-                            <td colspan="2">\ <input type="text" id="currentPrice2" style="width:60px"></td>
+                            <th scope="row">비교 주유소</th>
+                            <td colspan="2"><input type="text" id="currentPrice2" style="width:60px"> 원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주유량</th>
+                            <td colspan="2"><input type="text" id="oil_amount" style="width:60px"> 리터</td>
                         </tr>
                     </tbody>
                 </table>
@@ -150,11 +162,11 @@
                 _table.push('        </thead>');
                 _table.push('        <tfoot>');
                 _table.push('            <tr>');
-                _table.push('                <th scope="col">해뜨는 주유소</th>');
+                _table.push('                <th scope="row">해뜨는 주유소</th>');
                 _table.push('                <td colspan="2">\ ' + setPrice1 + '</td>');
                 _table.push('            </tr>');
                 _table.push('            <tr>');
-                _table.push('                <th scope="col">비교 주유소</th>');
+                _table.push('                <th scope="row">비교 주유소</th>');
                 _table.push('                <td colspan="2">\ ' + setPrice2 + '</td>');
                 _table.push('            </tr>');
                 _table.push('        </tfoot>');
