@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기름값 계산기</title>
-    <meta name="title" content="기름값 계산기">
+    <title>주유 금액 계산기</title>
+    <meta name="title" content="주유 금액 계산기">
     <meta name="author" content="jinnnh">
-    <meta name="description" content="기름값 계산해보자!!">
+    <meta name="description" content="주유 금액 계산해보자!!">
     <meta property="og:site_name" content="jinnnh 블로그">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="기름값 계산기">
-    <meta property="og:description" content="기름값 계산해보자!!">
-    <meta property="og:url" content="https://gutmate.github.io/2018/04/30/mysql-database-keymaps/">
+    <meta property="og:title" content="주유 금액 계산기">
+    <meta property="og:description" content="주유 금액 계산해보자!!">
+    <meta property="og:url" content="https://gutmate.github.io/practice/oil_calc.html">
     <meta property="og:image" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="기름값 계산기">
-    <meta name="twitter:description" content="기름값 계산해보자!!">
+    <meta name="twitter:title" content="주유 금액 계산기">
+    <meta name="twitter:description" content="주유 금액 계산해보자!!">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="jinnnh">
     <meta name="twitter:image:src" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
     <meta property="article:tag" content="database">
     <meta property="article:tag" content="mysql">
-    <meta property="article:published_time" content="2018-04-30T14:00:00+09:00">
+    <meta property="article:published_time" content="2018-05-04T15:00:00+09:00">
     <meta property="article:author" content="https://gutmate.github.io/authors/jinnnh">
     <link href="https://gutmate.github.io/rss/" rel="alternate" type="application/rss+xml" title="RSS">
     <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
@@ -67,7 +67,7 @@
     <div id="wrapper">
         <div id="content" class="container">
 
-            <div><h2>주유량에 따른 주유금액 + 세차금액 비교</h2></div>
+            <div><h2>주유량에 따른 주유 + 세차 금액 비교</h2></div>
 
             <div class="table tb_view">
                 <table>
@@ -105,7 +105,6 @@
                 </div>
             </div>
 
-            <div><h3>결과</h3></div>
         </div><!-- //container -->
 
         <script>
@@ -116,12 +115,13 @@
 
                 setTable(a, b, _oil);
 
-                $('#content').append(_tableHtml);
-
-                /* if ($('#output_table').length === 0) {
+                if ($('#output_table').length === 0) {
+                    $('#content').append('<div><h3>결과</h3></div>');
                     $('#content').append(_tableHtml);
+                    $('#oil_calc').text('계속 계산하기');
                 } else {
-                } */
+                    $('#content').append(_tableHtml);
+                }
             });
 
             /**
