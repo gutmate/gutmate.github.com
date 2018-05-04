@@ -1,4 +1,17 @@
 @charset "uft-8";
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+    color: #eee;
+}
+input[type="text"], input[type="search"], input[type="password"] {
+    border-radius: 0;
+}
+
+
 .html #wrapper {
     padding-top: 40px;
 }
