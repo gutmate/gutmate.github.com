@@ -1,0 +1,103 @@
+@charset "uft-8";
+.html #wrapper {
+    padding-top: 40px;
+}
+
+.html .container {
+    padding: 30px;
+}
+
+/* 버튼
+---------- ---------- ---------- ---------- ---------- */
+
+.btn-wrap {
+    margin-top: 20px;
+}
+
+.btn-wrap:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.btn-wrap .bw-left {
+    float: left;
+}
+.btn-wrap .bw-right {
+    float: right;
+}
+
+.btn-wrap button,
+.btn-wrap a {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0 15px;
+    color: #fff;
+    background-color: #505050;
+}
+
+
+
+/* 테이블
+---------- ---------- ---------- ---------- ---------- */
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.hide_caption {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.table {
+    border-top: 2px solid #91826f;
+    text-align: center;
+}
+.table + .table {
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 13px 15px;
+    border: 1px solid #dfe0e3;
+}
+
+.table td {
+    color: #666;
+}
+
+.table th:first-child,
+.table td:first-child {
+    border-left: 0;
+}
+
+.table th:last-child,
+.table td:last-child {
+    border-right: 0;
+}
+
+.table thead tr:first-child th,
+.table thead tr:first-child td {
+    border-top: 0;
+}
+
+.table thead th {
+    font-weight: 500;
+    background-color: #eff0f3;
+    color: #333;
+}
+
+.table tfoot th,
+.table tfoot td {
+    color: #666;
+    background-color: #eff0f3;
+}

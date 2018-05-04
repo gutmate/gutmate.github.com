@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기름값 계산기</title>
+    <meta name="title" content="기름값 계산기">
+    <meta name="author" content="jinnnh">
+    <meta name="description" content="기름값 계산해보자!!">
+    <meta property="og:site_name" content="jinnnh 블로그">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="기름값 계산기">
+    <meta property="og:description" content="기름값 계산해보자!!">
+    <meta property="og:url" content="https://gutmate.github.io/2018/04/30/mysql-database-keymaps/">
+    <meta property="og:image" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="기름값 계산기">
+    <meta name="twitter:description" content="기름값 계산해보자!!">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="jinnnh">
+    <meta name="twitter:image:src" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
+    <meta property="article:tag" content="database">
+    <meta property="article:tag" content="mysql">
+    <meta property="article:published_time" content="2018-04-30T14:00:00+09:00">
+    <meta property="article:author" content="https://gutmate.github.io/authors/jinnnh">
+    <link href="https://gutmate.github.io/rss/" rel="alternate" type="application/rss+xml" title="RSS">
+    <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="../assets/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+    <link href="../assets/apple-touch-icon.png" rel="apple-touch-icon-precomposed" type="image/png">
+    <link href="../assets/lib/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/monokai2.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lib/magnific-popup.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/fonts/Kakao.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/screen.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/html.css" rel="stylesheet" type="text/css">
+
+    <script src="../assets/lib/jquery-1.12.0.min.js"></script>
+</head>
+<body class="html">
+    <div id="header">
+        <button id="menu-toggle" type="button">
+            <span class="sr-only">Toggle Navigation Menu</span>
+        </button>
+        <a id="logo" href="/">
+            <span class="txt">jinnnh</span>
+        </a>
+        <ul id="menu" class="nav">
+            <li class=" active "><a href="/">블로그</a></li>
+            <li class=""><a href="/about/">ABOUT</a></li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <div id="content" class="container">
+
+            <div><h2>주유량에 따른 주유금액 + 세차금액 비교</h2></div>
+
+            <div class="table tb_view">
+                <table>
+                    <caption class="hide_caption">창업비용 안내</caption>
+                    <colgroup>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">지역</th>
+                            <th scope="col" colspan="2">휘발유 가격(리터)</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="col">주유량</th>
+                            <td colspan="2">L <input type="text" id="oil_amount"></td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>해뜨는 주유소</td>
+                            <td colspan="2">\ <input type="text" id="currentPrice1"></td>
+                        </tr>
+                        <tr>
+                            <td>비교 주유소</td>
+                            <td colspan="2">\ <input type="text" id="currentPrice2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-wrap">
+                <div class="bw-right">
+                    <a href="#none" class="bgr" id="oil_calc">계산하기</a>
+                </div>
+            </div>
+
+            <div><h3>결과</h3></div>
+        </div><!-- //container -->
+
+        <script>
+            $('#oil_calc').on('click', function () {
+                let a = $("#currentPrice1").val(); //해뜨는 주유소 휘발유 가격
+                let b = $("#currentPrice2").val(); //비교 주유소 휘발유 가격
+                let _oil = $("#oil_amount").val(); //주유량
+
+                setTable(a, b, _oil);
+
+                $('#content').append(_tableHtml);
+
+                /* if ($('#output_table').length === 0) {
+                    $('#content').append(_tableHtml);
+                } else {
+                } */
+            });
+
+            /**
+             * @param priceOil1
+             * @param priceOil2
+             * @param oilAmout
+             */
+            function setTable(priceOil1, priceOil2, oilAmount) {
+                priceOil1 = priceOil1 || 0;
+                priceOil2 = priceOil2 || 0;
+                oilAmount = oilAmount || 0;
+
+                let olibank1_pr = oilAmount * priceOil1;
+                let olibank2_pr = oilAmount * priceOil2;
+
+                let _wash = olibank1_pr > 50000 ? 3000 : 5000; //세차 가격
+
+                let paid1 = olibank1_pr + _wash; //해뜨는 주유소 지불 금액(세차 가격 포함)
+                let paid2 = olibank2_pr + 5000; //비교 주유소 지불 금액(세차 가격 포함)
+
+                let setPrice1 = priceOil1 + ' x ' + oilAmount + ' + ' + _wash + ' = ' + paid1; //view
+                let setPrice2 = priceOil2 + ' x ' + oilAmount + ' + 5000' + ' = ' + paid2; //view
+
+                let _table = [];
+
+                _table.push('<div class="table tb_view" id="output_table">');
+                _table.push('    <table>');
+                _table.push('        <caption class="hide_caption">결과</caption>');
+                _table.push('        <colgroup>');
+                _table.push('            <col>');
+                _table.push('        </colgroup>');
+                _table.push('        <thead>');
+                _table.push('            <tr>');
+                _table.push('                <th scope="col">지역</th>');
+                _table.push('                <th scope="col">휘발유 가격</th>');
+                _table.push('                <th scope="col">세차 가격</th>');
+                _table.push('            </tr>');
+                _table.push('        </thead>');
+                _table.push('        <tfoot>');
+                _table.push('            <tr>');
+                _table.push('                <th scope="col">해뜨는 주유소</th>');
+                _table.push('                <td colspan="2">\ ' + setPrice1 + '</td>');
+                _table.push('            </tr>');
+                _table.push('            <tr>');
+                _table.push('                <th scope="col">비교 주유소</th>');
+                _table.push('                <td colspan="2">\ ' + setPrice2 + '</td>');
+                _table.push('            </tr>');
+                _table.push('        </tfoot>');
+                _table.push('        <tbody>');
+                _table.push('            <tr>');
+                _table.push('                <td>해뜨는 주유소</td>');
+                _table.push('                <td>' + olibank1_pr + '</td>');
+                _table.push('                <td>' + _wash + '</td>');
+                _table.push('            </tr>');
+                _table.push('        </tbody>');
+                _table.push('    </table>');
+                _table.push('</div>');
+
+                _tableHtml = _table.join('\n');
+            }
+        </script>
+    </div><!-- //wrapper -->
+    <div id="footer" class="container-fluid">
+        <ul id="links">
+            <li>
+                <a id="link-github" href="http://github.com/gutmate" target="_blank">
+                    <span class="sr-only">github</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-rss" href="/rss" target="_blank">
+                    <span class="sr-only">rss</span>
+                </a>
+            </li>
+        </ul>
+        <p id="copyright">
+            <a href="//www.kakaocorp.com">Copyright © Kakao Corp.</a>
+            All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
