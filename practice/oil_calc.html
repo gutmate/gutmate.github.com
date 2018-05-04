@@ -124,9 +124,9 @@
 
             //계산하기
             $('#oil_calc').on('click', function () {
-                let a = $('#currentPrice1').val(); //해뜨는 주유소 휘발유 가격
-                let b = $('#currentPrice2').val(); //비교 주유소 휘발유 가격
-                let _oil = $('#oil_amount').val(); //주유량
+                var a = $('#currentPrice1').val(); //해뜨는 주유소 휘발유 가격
+                var b = $('#currentPrice2').val(); //비교 주유소 휘발유 가격
+                var _oil = $('#oil_amount').val(); //주유량
 
                 setTable(a, b, _oil);
 
@@ -150,18 +150,26 @@
                 priceOil2 = priceOil2 || 0;
                 oilAmount = oilAmount || 0;
 
-                let olibank1_pr = oilAmount * priceOil1;
-                let olibank2_pr = oilAmount * priceOil2;
+                var olibank1_pr = oilAmount * priceOil1;
+                var olibank2_pr = oilAmount * priceOil2;
 
-                let _wash = olibank1_pr > 50000 ? 2000 : 3000; //세차 가격
+                var _wash = olibank1_pr > 50000 ? 2000 : 3000; //세차 가격
 
-                let paid1 = olibank1_pr + _wash; //해뜨는 주유소 지불 금액(세차 가격 포함)
-                let paid2 = olibank2_pr + 5000; //비교 주유소 지불 금액(세차 가격 포함)
+                var paid1 = olibank1_pr + _wash; //해뜨는 주유소 지불 금액(세차 가격 포함)
+                var paid2 = olibank2_pr + 5000; //비교 주유소 지불 금액(세차 가격 포함)
 
-                let setPrice1 = priceOil1 + ' x ' + oilAmount + ' + ' + _wash + ' = ' + paid1; //view
-                let setPrice2 = priceOil2 + ' x ' + oilAmount + ' + 5000' + ' = ' + paid2; //view
+                var digit_olibank1_pr = conversionDigit(olibank1_pr);
+                var digit_olibank2_pr = conversionDigit(olibank2_pr);
+                var digit_paid1 = conversionDigit(paid1);
+                var digit_paid2 = conversionDigit(paid2);
+                var digit_priceOil1 = conversionDigit(priceOil1);
+                var digit_priceOil2 = conversionDigit(priceOil2);
+                var digit_wash = conversionDigit(_wash);
 
-                let _table = [];
+                var setPrice1 = digit_priceOil1 + ' x ' + oilAmount + ' + ' + digit_wash + ' = ' + digit_paid1; //view
+                var setPrice2 = digit_priceOil2 + ' x ' + oilAmount + ' + 5,000' + ' = ' + digit_paid2; //view
+
+                var _table = [];
 
                 _table.push('<div class="table tb_view" id="output_table">');
                 _table.push('    <table>');
@@ -189,19 +197,24 @@
                 _table.push('        <tbody>');
                 _table.push('            <tr>');
                 _table.push('                <th>해뜨는 주유소</th>');
-                _table.push('                <td>' + olibank1_pr + '</td>');
-                _table.push('                <td>' + _wash + '</td>');
+                _table.push('                <td>' + digit_olibank1_pr + '</td>');
+                _table.push('                <td>' + digit_wash + '</td>');
                 _table.push('            </tr>');
                 _table.push('            <tr>');
                 _table.push('                <th>비교 주유소</th>');
-                _table.push('                <td>' + olibank2_pr + '</td>');
-                _table.push('                <td>5000</td>');
+                _table.push('                <td>' + digit_olibank2_pr + '</td>');
+                _table.push('                <td>5,000</td>');
                 _table.push('            </tr>');
                 _table.push('        </tbody>');
                 _table.push('    </table>');
                 _table.push('</div>');
 
                 _tableHtml = _table.join('\n');
+            }
+
+            //자리수 구분
+            function conversionDigit(origin) {
+                return origin.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             }
         </script>
     </div><!-- //wrapper -->
