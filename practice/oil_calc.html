@@ -101,26 +101,42 @@
 
             <div class="btn-wrap">
                 <div class="bw-right">
-                    <button type="button" class="bgr" id="oil_calc">계산하기</button>
+                    <button type="button" class="clear" id="clear_history" style="display:none;">계산 내역 삭제</button>
+                    <button type="button" class="submit" id="oil_calc">계산하기</button>
                 </div>
+            </div>
+
+            <div id="output">
+
             </div>
 
         </div><!-- //container -->
 
         <script>
+            //계산내역 지우기
+            $('#clear_history').on('click', function () {
+                $('#output').empty();
+                $('#clear_history').hide();
+                $('#oil_calc').text('계산하기');
+                $('#currentPrice1, #currentPrice2, #oil_amount').val('');
+                $('#currentPrice1').focus();
+            });
+
+            //계산하기
             $('#oil_calc').on('click', function () {
-                let a = $("#currentPrice1").val(); //해뜨는 주유소 휘발유 가격
-                let b = $("#currentPrice2").val(); //비교 주유소 휘발유 가격
-                let _oil = $("#oil_amount").val(); //주유량
+                let a = $('#currentPrice1').val(); //해뜨는 주유소 휘발유 가격
+                let b = $('#currentPrice2').val(); //비교 주유소 휘발유 가격
+                let _oil = $('#oil_amount').val(); //주유량
 
                 setTable(a, b, _oil);
 
                 if ($('#output_table').length === 0) {
-                    $('#content').append('<div><h3>결과</h3></div>');
-                    $('#content').append(_tableHtml);
+                    $('#output').append('<div><h3>결과</h3></div>');
+                    $('#output').append(_tableHtml);
                     $('#oil_calc').text('계속 계산하기');
+                    $('#clear_history').show();
                 } else {
-                    $('#content').append(_tableHtml);
+                    $('#output').append(_tableHtml);
                 }
             });
 

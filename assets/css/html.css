@@ -51,6 +51,10 @@ input[type="text"], input[type="search"], input[type="password"] {
     background-color: #505050;
 }
 
+.btn-wrap .clear {
+    background-color: #d61618;
+}
+
 
 
 /* 테이블
