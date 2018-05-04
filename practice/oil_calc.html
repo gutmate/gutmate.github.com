@@ -78,21 +78,21 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">지역</th>
-                            <th scope="col" colspan="2">휘발유 가격(리터)</th>
+                            <th scope="col">항목</th>
+                            <th scope="col" colspan="2">입력</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">해뜨는 주유소</th>
-                            <td colspan="2"><input type="text" id="currentPrice1" style="width:60px"> 원</td>
+                            <td colspan="2"><input type="text" id="currentPrice1" style="width:60px"> 원 / L</td>
                         </tr>
                         <tr>
                             <th scope="row">비교 주유소</th>
-                            <td colspan="2"><input type="text" id="currentPrice2" style="width:60px"> 원</td>
+                            <td colspan="2"><input type="text" id="currentPrice2" style="width:60px"> 원 / L</td>
                         </tr>
                         <tr>
-                            <th scope="row">주유량</th>
+                            <th scope="row">총 주유량</th>
                             <td colspan="2"><input type="text" id="oil_amount" style="width:60px"> 리터</td>
                         </tr>
                     </tbody>
@@ -156,7 +156,7 @@
                 _table.push('        <thead>');
                 _table.push('            <tr>');
                 _table.push('                <th scope="col">지역</th>');
-                _table.push('                <th scope="col">휘발유 가격</th>');
+                _table.push('                <th scope="col">주유 가격</th>');
                 _table.push('                <th scope="col">세차 가격</th>');
                 _table.push('            </tr>');
                 _table.push('        </thead>');
@@ -172,7 +172,7 @@
                 _table.push('        </tfoot>');
                 _table.push('        <tbody>');
                 _table.push('            <tr>');
-                _table.push('                <td>해뜨는 주유소</td>');
+                _table.push('                <th>해뜨는 주유소</th>');
                 _table.push('                <td>' + olibank1_pr + '</td>');
                 _table.push('                <td>' + _wash + '</td>');
                 _table.push('            </tr>');
