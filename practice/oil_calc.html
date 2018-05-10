@@ -153,7 +153,15 @@
                 var olibank1_pr = oilAmount * priceOil1;
                 var olibank2_pr = oilAmount * priceOil2;
 
-                var _wash = olibank1_pr > 50000 ? 2000 : 3000; //세차 가격
+                var _wash;
+
+                if (olibank1_pr >= 80000) {
+                    _wash = 2000;
+                } else if (olibank1_pr >= 50000) {
+                    _wash = 3000;
+                } else {
+                    _wash = 4000;
+                }
 
                 var paid1 = olibank1_pr + _wash; //해뜨는 주유소 지불 금액(세차 가격 포함)
                 var paid2 = olibank2_pr + 5000; //비교 주유소 지불 금액(세차 가격 포함)
