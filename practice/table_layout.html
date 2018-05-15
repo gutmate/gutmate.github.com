@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 스크롤 레이아웃</title>
+    <meta name="title" content="테이블 스크롤 레이아웃">
+    <meta name="author" content="jinnnh">
+    <meta name="description" content="테이블 레이아웃">
+    <meta property="og:site_name" content="jinnnh 블로그">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="테이블 스크롤 레이아웃">
+    <meta property="og:description" content="테이블 레이아웃">
+    <meta property="og:url" content="https://gutmate.github.io/practice/oil_calc.html">
+    <meta property="og:image" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="테이블 스크롤 레이아웃">
+    <meta name="twitter:description" content="테이블 레이아웃">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="jinnnh">
+    <meta name="twitter:image:src" content="https://gutmate.github.io/assets/images/default_blog_cover.jpg">
+    <meta property="article:tag" content="database">
+    <meta property="article:tag" content="mysql">
+    <meta property="article:published_time" content="2018-05-04T15:00:00+09:00">
+    <meta property="article:author" content="https://gutmate.github.io/authors/jinnnh">
+    <link href="https://gutmate.github.io/rss/" rel="alternate" type="application/rss+xml" title="RSS">
+    <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="../assets/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+    <link href="../assets/apple-touch-icon.png" rel="apple-touch-icon-precomposed" type="image/png">
+    <link href="../assets/lib/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/monokai2.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lib/magnific-popup.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/fonts/Kakao.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/screen.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/html.css" rel="stylesheet" type="text/css">
+
+    <script src="../assets/lib/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-toggle').click(function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                if ($('#menu').is(':visible')) {
+                    $('#menu').hide();
+                } else {
+                    $('#search').hide();
+                    $('#menu').show();
+                }
+            });
+        });
+    </script>
+</head>
+<body class="html">
+    <div id="header">
+        <button id="menu-toggle" type="button">
+            <span class="sr-only">Toggle Navigation Menu</span>
+        </button>
+        <a id="logo" href="/">
+            <span class="txt">jinnnh</span>
+        </a>
+        <ul id="menu" class="nav">
+            <li class=" active "><a href="/">블로그</a></li>
+            <li class=""><a href="/about/">ABOUT</a></li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <div id="content" class="container">
+
+            <div><h2>종 스크롤 테이블</h2></div>
+
+            <div class="table scroll-y">
+                <div class="scroll-inner">
+                    <table>
+                        <caption class="hide-caption">종 스크롤 테이블</caption>
+                        <colgroup>
+                            <col style="width: 300px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">항목</th>
+                                <th scope="col">입력</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">제목</th>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">제목</th>
+                                <td>내용</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- //scroll-inner -->
+            </div><!-- //table scroll-y -->
+            <script>
+                $(document).ready(function () {
+                    scrollTable('.scroll-y');
+                });
+
+                /**
+                 * @param name 적용 대상
+                 */
+                function scrollTable(name) {
+                    if (name === undefined) {
+                        console.error('대상을 설정해주세요.');
+                    } else {
+                        if ($(name)[0] === undefined) {
+                            console.error('대상을 올바르게 설정해주세요.');
+                        }
+                    }
+                    var thead_node = $(name + ' thead tr').eq(0).children();
+                    var tbody_node = $(name + ' tbody tr').eq(0).children();
+                    var scrollbar_width = $(name + ' .scroll-inner').width() - $(name + ' .scroll-inner table').width();
+                    var w_arr = [];
+
+                    for (var i = 0; i < tbody_node.length; i++) {
+                        if (i === tbody_node.length - 1) {
+                            w_arr.push(tbody_node.eq(i).outerWidth() + scrollbar_width); // 마지막 요소 넓이에 스크롤 값 포함
+                        } else {
+                            w_arr.push(tbody_node.eq(i).outerWidth());
+                        }
+                    }
+
+                    for (var i = 0; i < thead_node.length; i++) {
+                        thead_node.eq(i).outerWidth(w_arr[i]);
+                    }
+                }
+            </script>
+
+        </div><!-- //container -->
+
+    </div><!-- //wrapper -->
+    <div id="footer" class="container-fluid">
+        <ul id="links">
+            <li>
+                <a id="link-github" href="http://github.com/gutmate" target="_blank">
+                    <span class="sr-only">github</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-rss" href="/rss" target="_blank">
+                    <span class="sr-only">rss</span>
+                </a>
+            </li>
+        </ul>
+        <p id="copyright">
+            <a href="//www.kakaocorp.com">Copyright © Kakao Corp.</a>
+            All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
