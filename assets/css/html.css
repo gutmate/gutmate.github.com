@@ -1,5 +1,4 @@
 @charset "uft-8";
-
 button {
     border: 0;
     background-color: transparent;
@@ -7,10 +6,12 @@ button {
     text-align: left;
     color: #eee;
 }
-input[type="text"], input[type="search"], input[type="password"] {
+
+input[type="text"],
+input[type="search"],
+input[type="password"] {
     border-radius: 0;
 }
-
 
 .html #wrapper {
     padding-top: 40px;
@@ -36,6 +37,7 @@ input[type="text"], input[type="search"], input[type="password"] {
 .btn-wrap .bw-left {
     float: left;
 }
+
 .btn-wrap .bw-right {
     float: right;
 }
@@ -54,8 +56,6 @@ input[type="text"], input[type="search"], input[type="password"] {
 .btn-wrap .clear {
     background-color: #d61618;
 }
-
-
 
 /* 테이블
 ---------- ---------- ---------- ---------- ---------- */
@@ -78,7 +78,8 @@ table {
     border-top: 2px solid #91826f;
     text-align: center;
 }
-.table + .table {
+
+.table+.table {
     margin-top: 20px;
 }
 
@@ -126,6 +127,7 @@ table {
 .table.scroll-y {
     position: relative;
 }
+
 .table.scroll-y:after {
     display: block;
     content: "";
@@ -134,26 +136,76 @@ table {
     left: 0;
     right: 0;
     height: 2px;
-    height: 1px \0/9; /* IE9 */
+    height: 1px \0/9;
+    /* IE9 */
     background-color: #e1e1e1;
 }
+
 .table.scroll-y .scroll-inner {
     overflow-x: visible;
     overflow-y: auto;
     max-height: 370px;
     margin-top: 47px;
 }
+
 .table.scroll-y thead {
     position: absolute;
     top: 0;
     z-index: 10;
 }
+
 /* .table.scroll-y thead th:nth-child(1) {
     width: 300px;
 }
 .table.scroll-y thead th:nth-child(2) {
     width: 640px;
 } */
+
+/* 박스 라인 애니메이션
+---------- ---------- ---------- ---------- ---------- */
+.menu_img_wrap .line {
+    position: absolute;
+    background-color: #00743b;
+    transition: all 0.3s ease
+}
+
+.menu_img_wrap .line01 {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0
+}
+
+.menu_img_wrap .line02 {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px
+}
+
+.menu_img_wrap .line03 {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 0
+}
+
+.menu_img_wrap .line04 {
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px
+}
+
+.menu_list li a:hover .menu_img_wrap .line01,
+.menu_list li a:hover .menu_img_wrap .line03 {
+    height: 100%
+}
+
+.menu_list li a:hover .menu_img_wrap .line02,
+.menu_list li a:hover .menu_img_wrap .line04 {
+    width: 100%
+}
 
 @media only screen and (max-width: 1024px) {
     .html #wrapper {
@@ -175,7 +227,6 @@ table {
     .table th {
         padding: 15px 8px;
     }
-
     .btn-wrap button,
     .btn-wrap a {
         height: 35px;
@@ -183,6 +234,4 @@ table {
         padding: 0 10px;
         font-size: 13px;
     }
-
-
 }
