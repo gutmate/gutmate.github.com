@@ -89,5 +89,5 @@ function setHght(el, n, maxHeight) {
 #### 실행
 
 ```javascript
-    equalHghtCol('.sitemap li', 4);
+equalHghtCol('.sitemap li', 4);
 ```
