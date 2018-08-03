@@ -7,8 +7,6 @@ tags:
   - javascript
 ---
 
-### 라인별 컬럼 높이 동일하게 맞추기
-
 ```javascript
 /**
  * 배열 분리
@@ -88,8 +86,8 @@ function setHght(el, n, maxHeight) {
 }
 ```
 
-```html
-    <script>
-        equalHghtCol('.sitemap li', 4);
-    </script>
+#### 실행
+
+```javascript
+    equalHghtCol('.sitemap li', 4);
 ```

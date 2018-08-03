@@ -4,6 +4,7 @@ title: '레이어 영역 프린트(modal)'
 author: jinnnh
 date: '2018-06-28 14:00'
 tags:
+  - javascript
   - print
   - modal
 ---
