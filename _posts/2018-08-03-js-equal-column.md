@@ -1,13 +1,13 @@
 ---
 layout: post
-title: '레이어 영역 프린트(modal)'
+title: '라인별 컬럼 높이 동일하게 맞추기'
 author: jinnnh
 date: '2018-08-03 15:30'
 tags:
   - javascript
 ---
 
-### 컬럼 높이 동일하게 맞추기
+### 라인별 컬럼 높이 동일하게 맞추기
 
 ```javascript
 /**
