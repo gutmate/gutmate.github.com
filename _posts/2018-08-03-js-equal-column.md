@@ -2,10 +2,9 @@
 layout: post
 title: '레이어 영역 프린트(modal)'
 author: jinnnh
-date: '2018-06-28 14:00'
+date: '2018-08-03 15:30'
 tags:
-  - print
-  - modal
+  - javascript
 ---
 
 ### 컬럼 높이 동일하게 맞추기
