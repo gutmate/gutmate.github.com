@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '라인별 컬럼 높이 동일하게 맞추기'
+title: '컬럼 높이 균일하게 맞추기'
 author: jinnnh
 date: '2018-08-03 15:30'
 tags:
