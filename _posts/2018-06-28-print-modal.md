@@ -23,9 +23,3 @@ var layerPrint = function layerPrint() {
     $('.wrap, .ly-wrap.active').removeAttr('style');
 }
 ```
-
-> 주의사항: body 영역 안에 printCont 영역이 존재하지 않을 시에 IE에서 프린트가 되지 않음. <br>
-> 예를들어 printCont영역을 html 영역 내, body영역 밖에 만들어 두고 body를 숨기는 방법으로
-> 레이어영역대한 프린트를 처리 할 경우 IE에서는 내용이 뜨지 않는다.
-
-
