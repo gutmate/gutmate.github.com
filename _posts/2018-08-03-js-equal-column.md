@@ -72,7 +72,7 @@ var equalHghtCol = {
         var cnt = Math.floor(len / n);
         var el_i = [];
 
-        for (var h = 0; h < len; h++) {
+        for (var k = 0; k < len; k++) {
             el_i.push(h);
         }
 
