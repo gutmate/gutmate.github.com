@@ -91,7 +91,7 @@ var equalHghtCol = {
 
 #### 실행
 
-`avascript equalHghtCol.render( string, number )`
+`equalHghtCol.render( string, number )`
 
 > __string__ <br>
 > Type: String <br>
