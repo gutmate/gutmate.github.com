@@ -91,7 +91,7 @@ var equalHghtCol = {
 
 #### 실행
 
-`equalHghtCol.render( string, number )`
+* equalHghtCol.render( string, number )
 > __string__ <br>
 > Type: String <br>
 > 정렬할 element 지정 값
