@@ -92,12 +92,12 @@ var equalHghtCol = {
 #### 실행
 
 `equalHghtCol.render( string, number )`
-> __string__
-> Type: String
+> __string__ <br>
+> Type: String <br>
 > 정렬할 element 지정 값
 
-> __number__
-> Type: Number
+> __number__ <br>
+> Type: Number <br>
 > row 당 column 개수
 
 ```javascript
