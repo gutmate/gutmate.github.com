@@ -7,8 +7,6 @@ tags:
   - javascript
 ---
 
-## 설정
-
 ```javascript
 var tempData = [];
 var firstNames = [
