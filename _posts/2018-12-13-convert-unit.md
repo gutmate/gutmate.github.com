@@ -13,10 +13,11 @@ tags:
 /**
  * 데이터 단위 변환
  * @param {string} currentUnit 현재 실제 데이터 단위(G, M, k ...) standardUnit 배열에 있는 단위, 없으면 추가해서 사용. 단, 10^3 기준의 단위만 사용
- * @param {string} useUnit 사용할 단위(ohm, P, F, mHz ...)
+ * @param {string} useUnit 사용할 단위(ohm, P, F, Hz ...)
  * @return {string} ex) {345} + {k} + {ohm} = '345kohm'
  */
 Number.prototype.convertUnit = function (currentUnit, useUnit) {
+    currentUnit = currentUnit || '';
     useUnit = useUnit || '';
     var convertValue, resultUnit, result;
     var _v = this; // 현재 값
@@ -62,21 +63,31 @@ Number.prototype.convertUnit = function (currentUnit, useUnit) {
 ```
 
 ## 실행
+`{Number}.convertUnit(currentUnit, useUnit);`
+`@param {string} currentUnit :: 현재 크기 단위(G, M, k ...)`
+`@param {string} useUnit :: 사용할 단위(ohm, P, F, Hz ...)`
+argument 생략시 기본으로 표현
 
 ```javascript
-Number('1').convertUnit('u', 'H'); // "1uH"
-Number('0.1').convertUnit('u', 'H'); // "100nH"
-Number('0.00001').convertUnit('u', 'H'); // "10pH"
+Number(1).convertUnit('u', 'H'); // "1uH"
+Number(0.1).convertUnit('u', 'H'); // "100nH"
+Number(0.00001).convertUnit('u', 'H'); // "10pH"
 
-Number('0.0000000001').convertUnit('k', 'ohm'); // "100nohm"
-Number('0.00001').convertUnit('k', 'ohm'); // "10mohm"
-Number('1').convertUnit('k', 'ohm'); // "1kohm"
-Number('100000').convertUnit('k', 'ohm'); // "100Mohm"
+Number(0.0000000001).convertUnit('k', 'ohm'); // "100nohm"
+Number(0.00001).convertUnit('k', 'ohm'); // "10mohm"
+Number(1).convertUnit('k', 'ohm'); // "1kohm"
+Number(100000).convertUnit('k', 'ohm'); // "100Mohm"
 
-Number('0.99123').convertUnit('', 'Hz'); // "991.23mHz"
-Number('10').convertUnit('', 'Hz'); // "10Hz"
-Number('1000').convertUnit('', 'Hz'); // "1kHz"
-Number('100000000').convertUnit('', 'Hz'); // "100MHz"
+Number(0.99123).convertUnit('', 'Hz'); // "991.23mHz"
+Number(10).convertUnit('', 'Hz'); // "10Hz"
+Number(1000).convertUnit('', 'Hz'); // "1kHz"
+Number(100000000).convertUnit('', 'Hz'); // "100MHz"
+
+// argument 생략
+Number(0.001).convertUnit(); // "1m"
+Number(10).convertUnit(); // 10
+Number(1000).convertUnit(); // "1k"
+Number(100000000000).convertUnit(); // "100G"
 
 var num = 0.12342;
 num.convertUnit('u', 'F'); // "123.42nF"
