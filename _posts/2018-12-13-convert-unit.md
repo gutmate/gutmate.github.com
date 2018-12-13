@@ -11,8 +11,8 @@ tags:
 
 ```javascript
 /**
- * 데이터 단위 변환
- * @param {string} currentUnit 현재 실제 데이터 단위(G, M, k ...) standardUnit 배열에 있는 단위, 없으면 추가해서 사용. 단, 10^3 기준의 단위만 사용
+ * 숫자 단위 변환
+ * @param {string} currentUnit 현재 실제 숫자 단위(G, M, k ...) standardUnit 배열에 있는 단위, 없으면 추가해서 사용. 단, 10^3 기준의 단위만 사용
  * @param {string} useUnit 사용할 단위(ohm, P, F, Hz ...)
  * @return {string} ex) {345} + {k} + {ohm} = '345kohm'
  */
@@ -67,7 +67,9 @@ Number.prototype.convertUnit = function (currentUnit, useUnit) {
 - `{Number}.convertUnit(currentUnit, useUnit);`
 - `@param {string} currentUnit :: 현재 크기 단위(G, M, k ...)`
 - `@param {string} useUnit :: 사용할 단위(ohm, P, F, Hz ...)`
+
 __* argument 생략시 기본으로 표현__
+
 
 ```javascript
 Number(1).convertUnit('u', 'H'); // "1uH"
