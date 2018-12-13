@@ -66,7 +66,7 @@ Number.prototype.convertUnit = function (currentUnit, useUnit) {
 `{Number}.convertUnit(currentUnit, useUnit);`
 `@param {string} currentUnit :: 현재 크기 단위(G, M, k ...)`
 `@param {string} useUnit :: 사용할 단위(ohm, P, F, Hz ...)`
-argument 생략시 기본으로 표현
+__* argument 생략시 기본으로 표현__
 
 ```javascript
 Number(1).convertUnit('u', 'H'); // "1uH"
