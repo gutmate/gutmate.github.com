@@ -9,7 +9,7 @@ tags:
 
 ## git 명령어
 
-|  | commend |
+|  | command |
 |-|-|
 | 전체 설정 확인 |  `git config --global -l` |
 | 저장소 url 변경 |  `git remote set-url origin https://333.333.333.333/repogitory.git` |
