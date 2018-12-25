@@ -34,7 +34,7 @@ $.fn.mobileFix = function (options) {
 // Only on touch devices
 if (Modernizr.touch) {
     $("body").mobileFix({ // Pass parent to apply to
-        inputElements: "input,textarea", // Pass activation child elements
+        inputElements: "input, textarea", // Pass activation child elements
         addClass: "fixfixed" // Pass class name
     });
 }
