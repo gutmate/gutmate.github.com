@@ -119,4 +119,4 @@ $(document).ready(function(){
 });
 ```
 
-> ### [github - jquery.animationImg](https://github.com/gutmate/animationJS)
+> ### [github - jquery.animationImg](https://gutmate.github.io/animationJS)
