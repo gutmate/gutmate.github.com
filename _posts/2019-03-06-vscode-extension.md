@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'VS Code 확장프로그램'
+title: 'Visual Studio Code 추천 확장프로그램 '
 author: jinnnh
 date: '2019-03-06 10:30'
 tags:
   - EDITOR
   - VS Code
+  - extension
 image: /files/covers/vscode-icon.jpg
 ---
 
