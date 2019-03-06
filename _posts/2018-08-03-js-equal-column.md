@@ -91,13 +91,13 @@ var equalHghtCol = {
 
 #### 실행
 
-`equalHghtCol.render( string, number )`
+`equalHghtCol.render( element, length )`
 
-> __string__ <br>
+> __element__ <br>
 > Type: String <br>
 > 정렬할 element 지정 값
 
-> __number__ <br>
+> __length__ <br>
 > Type: Number <br>
 > row 당 column 개수
 
