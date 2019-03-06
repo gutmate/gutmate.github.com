@@ -22,7 +22,7 @@ GEM
     gemoji (2.1.0)
     github-pages (85)
       github-pages-health-check (= 1.1.0)
-      jekyll (= 3.1.6)
+      jekyll (= 3.6.3)
       jekyll-coffeescript (= 1.0.1)
       jekyll-feed (= 0.5.1)
       jekyll-gist (= 1.4.0)
