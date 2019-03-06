@@ -12,7 +12,7 @@ image: /files/covers/vscode-icon.jpg
 
 ## Visual Studio Code Extension
 
-### Languge
+### Language
 
 - [__Korean Languiage Pack for Visual Studio Code__](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ko)
 //한글 메뉴 변환
