@@ -34,8 +34,10 @@ var equalHghtCol = {
      * @param {Number} n 한 라인 컬럼 개수
      */
     render: function (element, n) {
-        var el = this.getHeight(element)[0];
-        var _h = this.getHeight(element)[1].division(n);
+        n = n || 999;
+        var getH = this.getHeight(element);
+        var el = getH[0];
+        var _h = getH[1].division(n);
 
         // row 최대 높이 get
         for (var i = 0; i < _h.length; i++) {
@@ -104,5 +106,5 @@ var equalHghtCol = {
 ```javascript
 equalHghtCol.render('.sitemap li', 4);
 equalHghtCol.render('li', 2);
-equalHghtCol.render('#gnb>li', 7);
+equalHghtCol.render('#gnb>li');
 ```
