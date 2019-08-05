@@ -10,7 +10,7 @@ tags:
 ```javascript
 document.addEventListener('readystatechange', function () {
     if (event.target.readyState === "interactive") {
-        //same as:  document.addEventListener("DOMContentLoaded"...
+        // same as:  document.addEventListener("DOMContentLoaded"...
         // same as  jQuery.ready
         console.log("All HTML DOM elements are accessible");
     }
