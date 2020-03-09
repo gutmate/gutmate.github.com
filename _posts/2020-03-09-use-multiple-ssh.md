@@ -33,7 +33,7 @@ id_rsa.pub				id_rsa
 ```bash
 $ ssh-keygen -t rsa -C '{username}@gamil.com' //계정의 이메일 주소
 ```
-> 여기서 새로운 키를 저장할 경로를 묻는다.\
+> 여기서 새로운 키를 저장할 경로를 묻는다.<br>
 > ex) username01_gmail_rsa // 계정_메일호스트_rsa
 
 ```bash
