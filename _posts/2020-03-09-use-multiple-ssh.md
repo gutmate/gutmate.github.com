@@ -11,13 +11,13 @@ tags:
 
 ## 1. 로컬에 SSH 키 생성하기
 
-### .ssh 폴더로 이동하기(기본적으로 저장되는 디렉토리) -없다면 키를 생성할 때 자동으로 생성된다. (따로 직접 만들어도 된다.)
+### 1) .ssh 폴더로 이동하기(기본적으로 저장되는 디렉토리) -없다면 키를 생성할 때 자동으로 생성된다. (따로 직접 만들어도 된다.)
 
 ```bash
 $ cd ~/.ssh
 ```
 
-### .ssh 디렉토리가 존재한다면 기존의 키를 확인하자.
+### 2) .ssh 디렉토리가 존재한다면 기존의 키를 확인하자.
 
 
 ```bash
@@ -28,7 +28,7 @@ id_rsa.pub				id_rsa
 .pub가 붙은 파일은 공개 키, 아닌 것은 개인 키
 
 
-### ssh 키 생성하기
+### 3) ssh 키 생성하기
 
 ```bash
 $ ssh-keygen -t rsa -C '{username}@gamil.com' //계정의 이메일 주소
@@ -44,7 +44,7 @@ Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa): /Users/USERNA
 
 **생성완료**
 
-### SSH키 로컬에 등록하기
+### 4) SSH키 로컬에 등록하기
 
 ```bash
 $ eval "$(ssh-agent -s)" // ssh agent 시작
@@ -52,17 +52,17 @@ $ eval "$(ssh-agent -s)" // ssh agent 시작
 $ ssh-add ~/.ssh/github_USERNAME01_rsa
 ```
 
-### 생성한 ssh 공개 키 복사하기
+### 5) 생성한 ssh 공개 키 복사하기
 
 ```bash
 $ cat github_username_rsa.pub //파일내용 보기
 
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ usernam@gamil.com  //이부분 복사 (실제로는 굉장히 길다)
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ username@gamil.com  //이부분 복사 (실제로는 굉장히 길다)
 ```
 
 ## 2. 서버에 SSH키 등록하기
 
-### 해당 서버에 키를 등록해주도록 한다
+### 1) 해당 서버에 키를 등록해주도록 한다
 
 > Settings > SSH and GPG keys > New SSH key 버튼 클릭 > Title에는 구분할 수 있는 텍스트 입력, Key에는 복사해두었던 공개키를 넣어준다. > Add SSH key 버튼 클릭
 
@@ -72,7 +72,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ usernam@gamil.com  //이부분 
 
 서버에 ssh 인증을 할 때 여러개의 키가 존재할 때 어떤 키를 참조해야 하는지에 대한 옵션을 정해주어야 한다.
 
-### config 파일 생성
+### 1) config 파일 생성
 
 ```bash
 $ touch confing //0byte 의 config 파일 생성
@@ -103,7 +103,7 @@ Host USERNAME01.github.com #임의로 지정하는 곳(허나 서버와 연결�
 
 계속해서 추가가 가능
 
-### 서버와 연결이 잘 되었는지 확인
+### 2) 서버와 연결이 잘 되었는지 확인
 
 ```bash
 $ ssh -T USERNAME01.github.com
@@ -127,7 +127,7 @@ $ git remote add origin git@USERNAME01.github.com:USERNAME01/REPOSITORY.git
 $ git push origin master
 ```
 
-### 사용중에 갑자기 git access denied 메시지가 뜨면서 실패한다면?
+## 5. 사용중에 갑자기 git access denied 메시지가 뜨면서 실패한다면?
 
 ```bash
 $ ssh-add ~/.ssh/USERNAME01_gmail_rsa
