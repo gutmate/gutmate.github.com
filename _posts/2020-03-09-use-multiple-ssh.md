@@ -37,7 +37,7 @@ $ ssh-keygen -t rsa -C '{username}@gamil.com' //계정의 이메일 주소
 > ex) username01_gmail_rsa // 계정_메일호스트_rsa
 
 ```bash
-Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa): /Users/USERNAME/.ssh/github_USERNAME01_rsa
+Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa): /Users/USERNAME/.ssh/username_gmail_rsa
 ```
 
 이후 암호를 두번 입력해야 하는데 그냥 엔터를 쳐서 넘어가도 무방하다. (암호를 입력하게 되면 다른 PC에 복사해서 쓸 때 암호를 입력해줘야 한다. 암호입력하지 않는 것을 추천한다.)
@@ -49,13 +49,13 @@ Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa): /Users/USERNA
 ```bash
 $ eval "$(ssh-agent -s)" // ssh agent 시작
 
-$ ssh-add ~/.ssh/github_USERNAME01_rsa
+$ ssh-add ~/.ssh/username_gmail_rsa
 ```
 
 ### 5) 생성한 ssh 공개 키 복사하기
 
 ```bash
-$ cat github_username_rsa.pub //파일내용 보기
+$ cat username_gmail_rsa.pub //파일내용 보기
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ username@gamil.com  //이부분 복사 (실제로는 굉장히 길다)
 ```
