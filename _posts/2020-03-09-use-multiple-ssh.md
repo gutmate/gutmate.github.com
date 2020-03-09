@@ -108,11 +108,11 @@ Host USERNAME01.github.com #임의로 지정하는 곳(허나 서버와 연결�
 ```bash
 $ ssh -T USERNAME01.github.com
 
-Hi USERNAME01! You've successfully authenticated, but GitHub does not provide shell access.
+"Hi USERNAME01! You've successfully authenticated, but GitHub does not provide shell access."
 
 $ ssh -T USERNAME02.github.com
 
-Hi USERNAME02! You've successfully authenticated, but GitHub does not provide shell access.
+"Hi USERNAME02! You've successfully authenticated, but GitHub does not provide shell access."
 ```
 
 ## 4. 새 계정으로 push해보기
