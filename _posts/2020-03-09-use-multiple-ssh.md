@@ -40,7 +40,7 @@ $ ssh-keygen -t rsa -C '{username}@gamil.com' //계정의 이메일 주소
 Enter file in which to save the key (/Users/USERNAME/.ssh/id_rsa): /Users/USERNAME/.ssh/username_gmail_rsa
 ```
 
-이후 암호를 두번 입력해야 하는데 그냥 엔터를 쳐서 넘어가도 무방하다. (암호를 입력하게 되면 다른 PC에 복사해서 쓸 때 암호를 입력해줘야 한다. 암호입력하지 않는 것을 추천한다.)
+이후 암호를 두번 입력해야 하는데 그냥 엔터를 쳐서 넘어가도 무방하다.(암호를 입력하게 되면 다른 PC에 복사해서 쓸 때 암호를 입력해줘야 한다.)
 
 **생성완료**
 
@@ -52,7 +52,10 @@ $ eval "$(ssh-agent -s)" // ssh agent 시작
 $ ssh-add ~/.ssh/username_gmail_rsa
 ```
 
-### 5) 생성한 ssh 공개 키 복사하기
+
+## 2. 서버에 SSH키 등록하기
+
+### 1) 생성한 ssh 공개 키 복사
 
 ```bash
 $ cat username_gmail_rsa.pub //파일내용 보기
@@ -60,15 +63,14 @@ $ cat username_gmail_rsa.pub //파일내용 보기
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ username@gamil.com  //이부분 복사 (실제로는 굉장히 길다)
 ```
 
-## 2. 서버에 SSH키 등록하기
-
-### 1) 해당 서버에 키를 등록해주도록 한다
+### 2) 해당 서버에 키를 등록
 
 > Settings > SSH and GPG keys > New SSH key 버튼 클릭 > Title에는 구분할 수 있는 텍스트 입력, Key에는 복사해두었던 공개키를 넣어준다. > Add SSH key 버튼 클릭
 
 **등록완료**
 
-## 3. Config 파일 생성하기
+
+## 3. config 파일 생성하기
 
 서버에 ssh 인증을 할 때 여러개의 키가 존재할 때 어떤 키를 참조해야 하는지에 대한 옵션을 정해주어야 한다.
 
@@ -78,7 +80,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIFCYRPso/ username@gamil.com  //이부분
 $ touch confing //0byte 의 config 파일 생성
 ```
 
-config 파일이 있는 폴더를 열어 에디터로 내용을 추가 해준다
+### 2) config 파일이 있는 폴더를 열어 에디터로 내용을 추가 해준다
 
 
 ```
@@ -103,7 +105,9 @@ Host USERNAME01.github.com #임의로 지정하는 곳(허나 서버와 연결�
 
 계속해서 추가가 가능
 
-### 2) 서버와 연결이 잘 되었는지 확인
+## 4. 서버와 연결이 잘 되었는지 확인
+
+### 1) 명령어로 확인
 
 ```bash
 $ ssh -T USERNAME01.github.com
@@ -115,7 +119,7 @@ $ ssh -T USERNAME02.github.com
 "Hi USERNAME02! You've successfully authenticated, but GitHub does not provide shell access."
 ```
 
-## 4. 새 계정으로 push해보기
+### 2) 새 계정으로 push해보기
 
 ```bash
 $ git init
@@ -133,4 +137,4 @@ $ git push origin master
 $ ssh-add ~/.ssh/USERNAME01_gmail_rsa
 ```
 
-위에서 입력했듯이 ssh 등록 명령어를 재입력해서 다시 등록해보고 연결을 시도해보자.
+위에서 입력했듯이 ssh 등록 명령어를 재입력해서 다시 등록해보고 연결 시도
