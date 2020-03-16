@@ -2,7 +2,7 @@
 layout: post
 title: 'Markdown code tag color'
 author: jinnnh
-date: '2017-03-11 17:25'
+date: '2017-01-01 17:25'
 tags:
   - markdown
 ---
