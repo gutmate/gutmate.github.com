@@ -13,12 +13,18 @@ tags:
 - `git bisect start` // git bisect 시작
 - `git bisect good <rev>` // 단어는 good 이지만 의미는 old(과거 시점 or 시작 시점)
 - `git bisect bad <rev>` // 단어는 bad 이지만 의미는 new(최근 시점 or 종료 시점)
+- `git bisect <bad rev> <good rev>` // `git bisect good <rev>`, `git bisect bad <rev>`한 번에 실행
 - `git bisect reset` // git bisect 종료
 
 ```
 git bisect start
 git bisect good 3a72849
 git bisect bad 6aab2f2
+```
+or
+```
+git bisect start
+git bisect 6aab2f2 3a72849
 ```
 
 > 반드시 `git bisect good`을 먼저 설정해야 하며 `git bisect bad` 시점보다 과거 시점으로 설정해야 한다.<br>
